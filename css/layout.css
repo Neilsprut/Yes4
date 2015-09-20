@@ -292,10 +292,10 @@ pre code{white-space: pre-line;}
 .boxIcon a:hover{text-decoration:none; }
 
 .boxIcon a:hover i{
-	border: 25px solid #F7F7F7;
+	/*border: 25px solid #F7F7F7;
 	width: 150px;
 	height: 150px;
-	margin:11px auto;
+	margin:11px auto;*/
 }
 
 /* img box */

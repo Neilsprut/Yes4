@@ -10,8 +10,8 @@
 	================================================== -->
 	<meta charset="utf-8">
 	<title>Acerta</title>
-	<meta name="description" content="Acerta assures quality of safety critical software">
-	<meta name="author" content="Greta Cutulenco">
+	<meta name="description" content="Acerta">
+	<meta name="author" content="Acerta">
 <!-- Mobile Specific Metas
 	================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -22,10 +22,16 @@
 	<!-- web font  -->
 	<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400' rel='stylesheet' type='text/css'>
 	<!-- plugin css  -->
+	<link rel="stylesheet" type="text/css" href="js-plugin/animation-framework/animate.css" />
+	<!-- Pop up-->
 	<link rel="stylesheet" type="text/css" href="js-plugin/magnific-popup/magnific-popup.css" />
-	<link type="text/css" rel="stylesheet" href="js-plugin/isotope/css/style.css">
+	<!-- Revolution Slider -->
+	<link rel="stylesheet" type="text/css" href="js-plugin/revolution-slider/rs-plugin/css/navstylechange.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="js-plugin/revolution-slider/rs-plugin/css/settings-hideo.css" media="screen" />
+
 	<!-- nekoAnim-->
 	<link rel="stylesheet" type="text/css" href="js-plugin/appear/nekoAnim.css" />
+
 	<!-- Owl carousel-->
 	<link rel="stylesheet" href="js-plugin/owl.carousel/owl-carousel/owl.carousel.css">
 	<link rel="stylesheet" href="js-plugin/owl.carousel/owl-carousel/owl.theme.css">
@@ -34,9 +40,8 @@
 	<link type="text/css" rel="stylesheet" href="font-icons/custom-icons/css/custom-icons-ie7.css">
 	<!-- Custom css -->
 	<link type="text/css" rel="stylesheet" href="css/layout.css">
-	<link type="text/css" id="colors" rel="stylesheet" href="css/dark-sea-green.css">
+	<link type="text/css" id="colors" rel="stylesheet" href="css/dark-green.css">
 	<link type="text/css" rel="stylesheet" href="css/custom.css">
-
 	<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
 	<script src="js/modernizr-2.6.1.min.js"></script>
 <!-- Favicons
@@ -47,305 +52,467 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 	<link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
 </head>
-<body data-spy="scroll" data-target="#resMainMenu" data-offset="150" id="onePage" class="activateAppearAnimation">
 
-
-	<!-- Preloader -->
-	<div id="preloader">
-		<div id="status">
-			<img class="img-responsive" src="images/logo-big.png" alt="Acerta" />
-			Loading...
-		</div>
-	</div>
-	<!-- Preloader -->
-
+<!-- <body class="activateAppearAnimation"> -->
+<body class="">
 <!-- Primary Page Layout
 	================================================== -->
 	<!-- globalWrapper -->
-	<div id="globalWrapper">
+	<div id="globalWrapper" class="localscroll">
+		<header class="navbar-fixed-top header4">
 
-
-		<!-- slider -->
-		<section id="homeFullScreen" data-stellar-background-ratio="0.5" class="color2">
-			<div class="maskParent" >
-				<div class="paralaxMask"></div>
-				<div id="fullScreenSliderWrapper">
-
-					<div class="blockCenter">
-						<div id="logoBig">
-							<img class="img-responsive" src="images/logo-big.png" alt="Acerta" />
+			<!-- header -->
+			<div id="mainHeader" role="banner">
+				<div class="container">
+					<nav class="navbar navbar-default" role="navigation">
+						<div class="navbar-header">
+							<!-- responsive navigation (button for mall screens) -->
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<!-- Logo -->
+							<a class="navbar-brand" href="index.html">
+								<img src="images/acerta-logo-white.png" style="width: 28%; height: 28%;"/>
+							</a>
 						</div>
 
-						<div class="owl-carousel nekoDataOwl" data-neko_items="1" data-neko_singleitem="true" data-neko_paginationnumbers="true" data-neko_transitionstyle="backSlide">
+						<div class="collapse navbar-collapse" id="mainMenu">
+							<!-- Main navigation -->
+							<ul class="nav navbar-nav pull-right">
 
+								<li class="primary">
+									<a href="index.html" class="firstLevel active hasSubMenu">Home</a>
+									<!-- <ul class="subMenu">
+										<li><a href="index.html">Default</a></li>
+										<li><a href="home1.html">Revolution Slider</a></li>
+										<li class="last"><a href="index-one-page.html">One page</a></li>
+									</ul> -->
+								</li>
 
-							<div class="item">
-								<h1>Analyze your system</h1>
-							</div>
+								<li class="sep"></li>
 
-							<div class="item">
-								<h1>Demonstrate it is safe</h1>
-							</div>
+								<li class="primary nekoMegaMenuTrigger">
+									<a href="features.html" class="firstLevel">Features</a>
+								</li>
 
-							<div class="item">
-								<h1>Perform Anomaly Detection</h1>
-							</div>
+								<li class="sep"></li>
+							<!--
+								<li class="primary">
+									<a href="blog-home-sidebar-right.html" class="firstLevel">Blog</a>
+								<li class="sep"></li> -->
 
+								<li class="primary nekoMegaMenuTrigger">
+									<a href="contact.html" class="firstLevel">Contact</a>
+								</li>
+
+								<li id="lastMenu" class="last"></li>
+							</ul>
+							<!-- End main navigation -->
 						</div>
-					</div>
-
+					</nav>
 				</div>
 			</div>
-		</section>
-		<!-- slider -->
-
-		<!-- header -->
-		<header class="navbar" id="mainHeader" role="banner">
-			<nav class="navbar navbar-default scrollMenu" role="navigation" id="resMainMenu">
-
-				<div class="container">
-					<div class="navbar-header">
-						<!-- responsive navigation -->
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<!-- Logo -->
-						<a class="navbar-brand" href="index.html"><img src="images/main-logo.png" alt="Acerta"/></a>
-					</div>
-
-					<div class="collapse navbar-collapse">
-						<!-- Main navigation -->
-						<ul class="nav navbar-nav pull-right">
-							<li class="active"><a href="#homeFullScreen">Home</a></li>
-							<li class="sep"></li>
-							<li><a href="#about">About us</a></li>
-							<li class="sep"></li>
-							<li><a href="#paralaxSlice1">Our work</a></li>
-							<li class="sep"></li>
-							<li><a href="#team">Our team</a></li>
-							<li class="sep"></li>
-							<li> <a href="#contactSlice">Contact</a> </li>
-						</ul>
-					</div>
-
-				</div>
-			</nav>
-
 		</header>
 		<!-- header -->
-
 		<!-- ======================================= content ======================================= -->
+		<!-- slider -->
+		<section id="rsDemoWrapper" class="color3">
+			<div class="tp-banner-container">
+				<div class="tp-banner" >
+					<ul>	<!-- SLIDE  -->
+						<li data-transition="fade" data-slotamount="1" data-masterspeed="0" >
+							<!-- MAIN IMAGE -->
+							<img src="images/main/hex1.JPG"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
 
-		<!-- about -->
-		<section id="about" class="color0">
-			<div class="col-md-12 text-center pt30 pb15">
-				<h1>About us</h1>
-				<h2 class="subTitle">Acerta identifies defects in safety-critical software</h2>
-			</div>
+							<div class="tp-caption largeblackbg skewfromleft tp-resizeme"
+							data-x="0" data-hoffset="0"
+							data-y="110"
+							data-speed="600"
+							data-start="900"
+							data-easing="Power4.easeOut"
+							data-endspeed="600"
+							data-endeasing="Power0.easeIn"
+							style="z-index: 3">Turn raw data into informed decisions
 
-			<section class="pt15 pb30">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-6">
-							<h2>Demonstrate your system is safe</h2>
+							</div>
 
-							<p>Acerta was created to make standard compliance and certification a simple, cost efficient, and evidence driven process. </p>
-
-                            <h3>How does it work?</h3>
-                            <p>Acerta uses logs of system activity, or traces, to extract key insights about system behavior. These insights are then used as evidence that the system complies with safety requirements. Acerta makes it easy to demonstrate that the system functions correctly during run time, and can produce a ready-to-use report for certification.
-							</p>
-						</div>
-
-						<div class="col-sm-6">
-							<h2>No need for customization</h2>
-
-							<p> Operating systems, hardware silicon, and runtime environments provide different means to collect traces. Acerta does not impose restrictions on the traces collected by the system. It uses any type of trace format and adapts to the type of information that is available. As such, Acerta does not require any extra work or customization from the manufacturer, therefore reducing the time and cost necessary to get the quality evidence.
-                            </p>
-						</div>
-					</div>
-				</div>
-			</section>
-		</section>
-		<!-- about -->
-
-		<!-- works -->
-		<section id="paralaxSlice1" data-stellar-background-ratio="0.5">
-			<div class="maskParent">
-				<div class="paralaxMask"></div>
-				<div class="paralaxText container pb30 pt40">
-					<div class="row">
-						<div class="col-md-12 text-center pt30 pb30">
-							<h2><i class="icon-th iconMedium iconRounded"></i><br />
-								Our Work<br />
-								<small>
-									Current pilot projects
-								</small>
-							</h2>
-						</div>
-					</div>
+							<!-- LAYER NR. 3 -->
+							<div class="tp-caption mediumwhitebg customin customout tp-resizeme"
+							data-x="0" data-hoffset="0"
+							data-y="200" data-voffset="-140"
+							data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:5;scaleY:5;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+							data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+							data-speed="600"
+							data-start="1700"
+							data-easing="Power4.easeOut"
+							data-endspeed="600"
+							data-endeasing="Power0.easeIn"
+							style="z-index: 4">Machine-assisted root cause analysis and anomaly detection
+							</div>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</section>
+<!-- slider -->
 
-		<!-- works intro -->
-		<section class="pt40 pb15 color0" >
-			<div class="container">
-				<div class="row pb30">
-					<div class="col-sm-6 col-sm-offset-1"  data-nekoanim="fadeInLeft" data-nekodelay="300">
-						<img src="images/main/car_2.png" alt="services" class="img-responsive imgBorder">
-					</div>
+<!-- about us -->
+<section id="about" class="color1">
+	<section class="pt15 pb30 color2">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h1>Overview</h1>
+					<p style="font-size: 20px; color: black;">
+						The exponential growth in software size and the rise of Industrial IoT have made it more difficult and time consuming to diagnose problems in machines. Acerta helps you reduce the effort and resources necessary to locate and understand the issues.
+					</p>
+					<p style="font-size: 20px; color: black;">
+						By using the large amount of data gathered from system operation, Acerta can gain powerful new insight and intelligence. We can identify anomalies and irregularities in the system, help zero in to the root cause of the problem, and predict future failures. The automated analysis transforms your day-to-day operations and improves decision-making.
+          </p>
+				</div>
+				<div class="col-md-6">
 
-					<div class="col-sm-4" data-nekoanim="fadeInRight" data-nekodelay="300">
-						<h2>QNX Car Case Study </h2>
-						<p>
-							The car platform is a comprehensive case study geared towards automotive software and systems research. The case study offers several Advanced Driver Assistance Systems (ADAS) implemented on an RC car model running on a treadmill. </p>
-
-                        <p>
-                            The setup offers a rich set of safety-critical applications with timing constraints in a controlled environment. Available ADAS functions include lane departure warning, lane keeping assistance, and adaptive cruise control.
-                        </p>
-
-                        <p>
-                            Acerta was used to analyze the behavior of the driver assistance systems at run time. Through the collected system traces, we identified important system scheduling properties, interrupt behavior, communication properties, and performance metrics.
-                        </p>
-					</div>
 				</div>
 			</div>
+		</div>
+	</section>
+</section>
+<!--  -->
 
-		</section>
-		<!-- works intro -->
-        <!-- works -->
+<!-- Industrial IoT -->
+<section id="IIoT" class="color3">
+	<div class="container pt30 pb15">
+		<h1 style="font-weight: bold; font-size: 45px;"><strong>Industrial IoT</strong></h1>
 
-        <section id="" class="color0">
-            <section class="container">
-                <div class="row">
-                    <div class="">
-                        <hr class="lineLines">
-                    </div>
-                </div>
-            </section>
-        </section>
+		<div class="jumbotron">
+			<p style="font-size: 30px; color: black;">
+				Take advantage of the new communication vectors between machines and the entreprize.
+				Analyze the data gathered from field assets and make informed decisions in a fraction of the time.
+			</p>
+		</div>
 
-        <!-- team -->
-        <section id="team" class="color0 pb30">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 pt30 pb40 text-center">
-						<h1>Meet our team</h1>
-						<p class="subTitle">
-							We have expertise in safety-critical embedded systems and data analysis.
-                            <br>
-                            We are building the tools that analyze system traces and perform anomaly detection.
+		<p style="font-size: 20px;" class="">
+			As more companies embrace the Industrial Internet of Things (IoT),
+			the massive volumes of data gathered by interconnected products opens the
+			opportunity to automate day-to-day decision-making.
+
+			Continuous analysis of system behavior will help produce valuable insights,
+			increase productivity, and predict problems before they arise.
+		</p>
+
+		<div class="pt15" style="padding-left: 0px;">
+			<article class="col-md-4 isotopeItem">
+				<div class="pinBox">
+					<figure>
+						<img src="images/main/airplane-cockpit.png" class="img-responsive">
+					</figure>
+					<section class="boxContent">
+						<h3 style="color: black; font-weight: bold; font-size: 18px;">Airplane Health Management</h3>
+						<p style="color: black;">
+							Timely failure prognosis can prevent substantial loss of time and profit.
+							<br/>
+							<a href="features.html" class="moreLink">Read more.</a>
 						</p>
-
-
-					</div>
+					</section>
 				</div>
-				<div class="row">
-                    <div class="col-sm-3"></div>
-					<div class="col-sm-3" data-nekoanim="fadeInUp" data-nekodelay="0" >
-						<article>
-							<div><img src="images/team/greta.jpg" alt="" class="img-responsive" style="height:262.5px;width:262.5px;"></div>
-							<div class="boxContent text-center">
-								<h3>Greta Cutulenco</h3>
-								<p>Co-founder</p>
-							</div>
-						</article>
-					</div>
-					<div class="col-sm-3" data-nekoanim="fadeInUp" data-nekodelay="100" >
-						<article>
-							<div><img src="images/team/sebastian.jpg" alt="" class="img-responsive" style="height:262.5px;width:262.5px;"></div>
-							<div class="boxContent text-center">
-								<h3>Sebastian Fischmeister</h3>
-								<p>Co-founder</p>
-							</div>
-						</article>
-					</div>
+			</article>
+			<article class="col-md-4 isotopeItem">
+				<div class="pinBox">
+					<figure>
+						<img src="images/main/APMA-lexus.jpg" class="img-responsive">
+					</figure>
+					<section class="boxContent">
+						<h3 style="color: black; font-weight: bold; font-size: 18px;">Vehicle Health Management</h3>
+
+						<p style="color: black;">
+							Anomaly detection can greatly reduce the time and effort needed to diagnose failure.
+							<br/>
+							<a href="features.html" class="moreLink">Read more.</a>
+						</p>
+					</section>
 				</div>
-			</div>
-		</section>
-		<!-- team -->
+			</article>
+			<article class="col-md-4 isotopeItem" >
+				<div class="pinBox">
+					<figure>
+						<img src="images/main/advanced-manufacturing.jpg" class="img-responsive">
+					</figure>
+					<section class="boxContent">
+						<h3 style="color: black; font-weight: bold; font-size: 18px;">Advanced Manufacturing</h3>
 
-        <!-- contact-->
-		<section id="contactSlice" class="color2">
-			<div class="col-md-12 text-center pt30 pb15">
-				<h1 class="noSubtitle">Contact us</h1>
-			</div>
-			<section class="pt15 pb30">
-				<div class="container">
-					<div class="row">
-                        <div class="col-sm-1"></div>
-						<div class="col-sm-4">
-                            <h3>info@acerta.ca</h3>
-						</div>
-                        <div class="col-sm-4">
-                            <h3>Address:</h3>
-                            <address>
-                                University of Waterloo<br/>
-                                200 University Ave., E5<br/>
-                                Waterloo, ON, Canada <br/>
-                                N2L 3G1
-                            </address>
-                        </div>
-                        <div class="col-sm-3">
-                            <h3>Phone:</h3>
-                            <p>
-                                +1 - 519 - 729 - 5543<br/>
-                            </p>
-                        </div>
-					</div>
+						<p style="color: black;">
+							Use prognosis and diagnosis to achieve higher equipment availability.
+							<br/>
+							<a href="features.html" class="moreLink">Read more.</a>
+						</p>
+					</section>
 				</div>
-			</section>
-		</section>
-		<!-- contact-->
-
-		<!-- ======================================= content ======================================= -->
-
-		<!-- footer -->
-		<section  id="footerRights" style="border-top:none;">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<p>Copyright © <script type="text/javascript">document.write(new Date().getFullYear());</script>Acerta / All rights reserved.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End footer -->
-
+			</article>
+		</div>
 	</div>
-	<!-- global wrapper -->
+</section>
+<!-- -->
+
+<!-- Trace Intelligence -->
+<section id="trace" class="" style="background-color: white;">
+	<div class="container">
+		<div class="col-md-4 pt30 pb15">
+			<h1 style="font-weight: bold; font-size: 45px;"><strong>Trace Intelligence</strong></h1>
+			<p style="font-size: 20px; color: black;">
+				The volume of data produced and recorded by modern systems has exploded.
+				This data represents an enormous and often untapped wealth of information.
+				Turn the data into powerful new insight and intelligence.
+			</p>
+
+			<!-- <div class="row mt30"> -->
+			<h1 style="font-weight: bold; font-size: 45px;" class="mt15"><strong>Success Stories</strong></h1>
+			<p style="font-size: 20px; color: black;">
+				Acerta has been successfully applied to multiple data sources.
+				<br/>
+				<a href="features.html">Read more</a>
+			</p>
+<!-- 				<div class="">
+					<article class="boxIcon" data-nekoanim="fadeIn" data-nekodelay="200">
+						<a href="#" style="padding-left: 0px; text-align: left;">
+							<i class="icon-thumbs-up iconBig iconRounded" style="margin-left: 0px; margin-right: 18px; float: left;"></i>
+							<p style="font-size: 20px; color: black; position: relative; top: 76px;">Success Stories</p>
+						</a>
+					</article>
+
+				</div>
+				<div class="col-md-6 text-center">
+					<p style="font-size: 20px; color: black;">Success Stories</p>
+				</div> -->
+			<!-- </div> -->
+
+		</div>
+		<div class="col-md-8">
+			<div class="text-center">
+				<img src="images/main/TraceIntelligence.png" class="img-responsive" style="width: 85%; height: 80%; margin-left: 6%;">
+			</div>
+		</div>
+	</div>
+</section>
+<!-- -->
+
+<!-- <section class="largeQuote pb40 pt40">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<blockquote>
+					<h1>
+						Receive timely notifications when equipment service will be needed.
+					</h1>
+				</blockquote>
+			</div>
+
+			<div class="col-md-4 text-center">
+				<img src="images/acerta-logo-white.png" style="width: 100%; height: 100%" />
+			</div>
+
+		</div>
+	</div>
+</section> -->
+
+<!-- Safety Critical -->
+<section id="about" class="color1">
+	<!-- 	<div class="col-md-12 pt30 pb15">
+		<img src="images/acerta-logo-white.png" style="width: 28%; height: 28%" />
+	</div> -->
+
+	<section class="pt15 pb30 color2">
+		<div class="container">
+			<h1>Safety Compliance</h1>
+
+			<div class="row">
+				<div class="col-md-8">
+					<h2 class="subTitle" style="background-color: white;">Acerta identifies defects in safety-critical software</h2>
+					<p style="font-size: 20px; color: black;">
+						Acerta provides new evidence based confirmation measures that can help you identify systemic defects in
+						safety-critical software. The automatically generated insights make standard compliance and certification
+						a simpler, cost effective, and evidence driven process.
+					</p>
+
+					<h2 class="subTitle" style="background-color: white;">How does it work?</h2>
+					<p style="font-size: 20px; color: black;">
+						Acerta uses logs of system activity to extract key insights about system behavior.
+						These insights are then used as evidence that the system complies with safety requirements.
+						Acerta makes it easy to demonstrate that the system functions correctly during run time, and can
+						automatically produce a -ready-to-use report for certification.
+					</p>
+
+					<h2 class="subTitle" style="background-color: white;">No need for customization</h2>
+					<p style="font-size: 20px; color: black;">
+						Operating systems, hardware silicon, and runtime environments provide different means to collect logs.
+						Acerta does not impose restrictions on the data collected by the system. It uses any type of
+						log format and adapts it to the type of information that is available. As such, Acerta requires minimal
+						adaptation, allowing you to get quality evidence in no time.
+					</p>
+
+					<a href="mailto:info@acerta.ca?subject=Acerta Safety Compliance Demo" class="btn btn-default btn-lg">Request a demo.</a>
+				</div>
+
+				<div class="col-md-4"></div>
+			</div>
+		</div>
+	</section>
+</section>
+<!--  -->
+
+<!-- benefits -->
+<section id="benefits" class="color3">
+	<div class="container pb30 pt15">
+		<h1 style="font-weight: bold; font-size: 45px;"><strong>Key Features</strong></h1>
+
+		<div class="row" style="padding-top: 18px;">
+			<div class="col-md-4">
+				<article class="iconBlocHeading">
+					<div style="padding-left: 0px; text-align: left; padding-bottom: 12px; padding-top: 12px;">
+						<i class="icon-puzzle iconRounded"></i>
+						<h2 style="font-size: 24px;">Deep Learning</h2>
+					</div>
+					<p style="margin-left: -48px; margin-right: 12px;">
+						Automatically create a baseline of the normal system behavior -
+						a runtime-based specification of what the system does.
+					</p>
+				</article>
+			</div>
+
+			<div class="col-md-4">
+				<article class="iconBlocHeading">
+					<div style="padding-left: 0px; text-align: left; padding-bottom: 12px; padding-top: 12px;">
+						<i class="icon-attention-alt iconRounded"></i>
+						<h2 style="font-size: 24px;">Anomaly Detection</h2>
+					</div>
+					<p style="margin-left: -48px; margin-right: 12px;">
+						Identify areas that require attention. Detect anomalies in system operational
+						real-time behavior and during post-mortem analysis. Identify irregularities
+						and issues much quicker.
+					</p>
+				</article>
+			</div>
+
+			<div class="col-md-4">
+				<article class="iconBlocHeading">
+					<div style="padding-left: 0px; text-align: left; padding-bottom: 12px; padding-top: 12px;">
+						<i class="icon-bullseye iconRounded"></i>
+						<h2 style="font-size: 24px;">Root Cause Analysis</h2>
+					</div>
+					<p style="margin-left: -48px; margin-right: 12px;">
+						Establish the root cause of the anomaly by identifying the outlying signals.
+					</p>
+				</article>
+			</div>
+		</div>
+
+		<div class="row" style="padding-top: 18px;">
+			<div class="col-md-4">
+				<article class="iconBlocHeading">
+					<div style="padding-left: 0px; text-align: left; padding-bottom: 12px; padding-top: 12px;">
+						<i class="icon-bug iconRounded"></i>
+						<h2 style="font-size: 24px;">Regression Testing</h2>
+					</div>
+					<p style="margin-left: -48px; margin-right: 12px;">
+						Compare regression results against the baseline to evaluate the health of the system
+						as it evolves. Confirm that the system does what it is supposed to do
+						and <strong>nothing else.</strong>
+					</p>
+				</article>
+			</div>
+
+			<div class="col-md-4">
+				<article class="iconBlocHeading">
+					<div style="padding-left: 0px; text-align: left; padding-bottom: 12px; padding-top: 12px;">
+						<i class="icon-chart-bar iconRounded"></i>
+						<h2 style="font-size: 24px;">Prognosis</h2>
+					</div>
+					<p style="margin-left: -48px; margin-right: 12px;">
+						Acerta allows you to predict the time at which a system or a
+						component will no longer perform its intended function.
+					</p>
+				</article>
+			</div>
+
+			<div class="col-md-4">
+				<article class="iconBlocHeading">
+					<div style="padding-left: 0px; text-align: left; padding-bottom: 12px; padding-top: 12px;">
+						<i class="icon-cloud iconRounded"></i>
+						<h2 style="font-size: 24px;">On the Cloud</h2>
+					</div>
+					<p style="margin-left: -48px; margin-right: 12px;">
+						Use Acerta on the cloud to explore the trends and to perform visual analysis on the data.
+						Use our service API to gain access to a library of advanced analysis algorithms
+					</p>
+				</article>
+			</div>
+		</div>
+	</div>
+</section>
+<!--  -->
+
+<!-- Team -->
+<!-- <section id="team" class="" style="background-color: white;">
+	<div class="container">
+		<div class="col-md-4 pt30 pb15">
+			<h1 style="font-weight: bold; font-size: 45px;"><strong>Meet the Team</strong></h1>
+
+			<div class="row">
+
+			</div>
+
+		</div>
+	</div>
+</section> -->
+<!-- -->
+
+<!-- footer -->
+<footer id="footerWrapper" class="color2 footer2">
+	<section id="footerRights">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<p>Copyright © 2015 <a href="http://www.little-neko.com" target="blank">Acerta</a> / All rights reserved.</p>
+				</div>
+
+			</div>
+		</div>
+	</section>
+</footer>
+<!-- End footer -->
+
+</div>
+<!-- global wrapper -->
 <!-- End Document
 	================================================== -->
 	<script type="text/javascript" src="js-plugin/respond/respond.min.js"></script>
 	<script type="text/javascript" src="js-plugin/jquery/jquery-1.10.2.min.js"></script>
 	<script type="text/javascript" src="js-plugin/jquery-ui/jquery-ui-1.8.23.custom.min.js"></script>
-
 	<!-- third party plugins  -->
 	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
 	<script type="text/javascript" src="js-plugin/easing/jquery.easing.1.3.js"></script>
 	<!-- carousel -->
-	<script type="text/javascript" src="js-plugin/owl.carousel/owl-carousel/owl.carousel.js"></script>
-	<!-- Isotope -->
+	<script type="text/javascript" src="js-plugin/owl.carousel/owl-carousel/owl.carousel.min.js"></script>
+	<!-- pop up -->
+	<script type="text/javascript" src="js-plugin/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<!-- Revolution slider -->
+	<script type="text/javascript" src="js-plugin/revolution-slider/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+	<script type="text/javascript" src="js-plugin/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+	<!-- isotope -->
 	<script type="text/javascript" src="js-plugin/isotope/jquery.isotope.min.js"></script>
-	<script type="text/javascript" src="js-plugin/isotope/jquery.isotope.sloppy-masonry.min.js"></script>
-	<!-- Form Validation -->
+	<!-- form -->
 	<script type="text/javascript" src="js-plugin/neko-contact-ajax-plugin/js/jquery.form.js"></script>
 	<script type="text/javascript" src="js-plugin/neko-contact-ajax-plugin/js/jquery.validate.min.js"></script>
-	<!-- LightBox system -->
-	<script type="text/javascript" src="js-plugin/magnific-popup/jquery.magnific-popup.min.js"></script>
-	<!-- Paralax -->
-	<script type="text/javascript" src="js-plugin/sticky/jquery.sticky.js"></script>
+	<!-- parallax -->
 	<script type="text/javascript" src="js-plugin/parallax/js/jquery.stellar.min.js"></script>
-
-	<!-- sharre -->
-	<script type="text/javascript" src="js-plugin/jquery.sharrre-1.3.4/jquery.sharrre-1.3.4.min.js"></script>
 	<!-- appear -->
 	<script type="text/javascript" src="js-plugin/appear/jquery.appear.js"></script>
+
 	<!-- toucheeffect -->
 	<script type="text/javascript" src="js-plugin/toucheeffect/toucheffects.js"></script>
+
 	<!-- Custom  -->
 	<script type="text/javascript" src="js/custom.js"></script>
 </body>
