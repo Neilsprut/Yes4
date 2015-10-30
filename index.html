@@ -62,7 +62,6 @@
 	  ga('send', 'pageview');
 
 	</script>
-
 </head>
 
 <!-- <body class="activateAppearAnimation"> -->
@@ -76,7 +75,7 @@
 			<!-- header -->
 			<div id="mainHeader" role="banner">
 				<div class="container">
-					<nav class="navbar navbar-default" role="navigation">
+					<nav class="navbar navbar-default scrollMenu" role="navigation">
 						<div class="navbar-header">
 							<!-- responsive navigation (button for mall screens) -->
 							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -86,35 +85,38 @@
 								<span class="icon-bar"></span>
 							</button>
 							<!-- Logo -->
-							<a class="navbar-brand" href="index.html">
-								<img src="images/acerta-logo-white.png" style="width: 28%; height: 28%;"/>
-							</a>
-						</div>
+	            <a class="navbar-brand" href="index.html">
+	              <img src="images/acerta-logo-white.png" height="53" width="184"/>
+	            </a>
+	          </div>
 
-						<div class="collapse navbar-collapse" id="mainMenu">
-							<!-- Main navigation -->
-							<ul class="nav navbar-nav pull-right">
+	          <div class="collapse navbar-collapse" id="mainMenu">
+	            <!-- Main navigation -->
+	            <ul class="nav navbar-nav pull-right">
 
-								<li class="primary">
-									<a href="index.html" class="firstLevel active hasSubMenu">Home</a>
-									<!-- <ul class="subMenu">
-										<li><a href="index.html">Default</a></li>
-										<li><a href="home1.html">Revolution Slider</a></li>
-										<li class="last"><a href="index-one-page.html">One page</a></li>
-									</ul> -->
-								</li>
+	              <li class="primary">
+	                <a href="index.html" class="firstLevel active">Home</a>
+	              </li>
 
-								<li class="sep"></li>
+	              <li class="sep"></li>
 
-								<li class="primary nekoMegaMenuTrigger">
-									<a href="features.html" class="firstLevel">Features</a>
-								</li>
+	              <li class="primary">
+	                <a href="solutions.html"  class="firstLevel">Solutions</a>
+	              </li>
 
-								<li class="sep"></li>
-							<!--
-								<li class="primary">
-									<a href="blog-home-sidebar-right.html" class="firstLevel">Blog</a>
-								<li class="sep"></li> -->
+	              <li class="sep"></li>
+
+	              <li class="primary">
+	                <a href="industries.html" class="firstLevel">Industries</a>
+	              </li>
+
+	              <li class="sep"></li>
+
+	              <li class="primary">
+	                <a href="success.html" class="firstLevel">Success Stories</a>
+	              </li>
+
+	              <li class="sep"></li>
 
 								<li class="primary nekoMegaMenuTrigger">
 									<a href="company.html" class="firstLevel">Company</a>
@@ -166,7 +168,7 @@
 							data-easing="Power4.easeOut"
 							data-endspeed="600"
 							data-endeasing="Power0.easeIn"
-							style="z-index: 4">Machine-assisted root cause analysis and anomaly detection
+							style="z-index: 4">Machine-assisted anomaly detection and root cause analysis
 							</div>
 						</li>
 					</ul>
@@ -226,9 +228,9 @@
 						<img src="images/main/airplane-cockpit.png" class="img-responsive">
 					</figure>
 					<section class="boxContent">
-						<h3 style="color: black; font-weight: bold; font-size: 18px;">Airplane Health Management</h3>
+						<h3 style="color: black; font-weight: bold; font-size: 18px;">Airplane Health</h3>
 						<p style="color: black;">
-							Timely failure prognosis can prevent substantial loss of time and profit.
+							Detecting anomalies early can prevent substantial loss of resources.
 							<br/>
 							<a href="features.html" class="moreLink">Read more.</a>
 						</p>
@@ -242,7 +244,7 @@
 						<img src="images/main/APMA-lexus.jpg" class="img-responsive">
 					</figure>
 					<section class="boxContent">
-						<h3 style="color: black; font-weight: bold; font-size: 18px;">Vehicle Health Management</h3>
+						<h3 style="color: black; font-weight: bold; font-size: 18px;">Vehicle Health</h3>
 
 						<p style="color: black;">
 							Anomaly detection can greatly reduce the effort to diagnose failure.
@@ -278,11 +280,14 @@
 <section id="trace" class="" style="background-color: white;">
 	<div class="container">
 		<div class="col-md-5 pt30 pb15">
-			<h1 style="font-weight: bold; font-size: 45px;"><strong>Trace Intelligence</strong></h1>
+			<h1 style="font-weight: bold; font-size: 45px;"><strong>Anomaly Detection</strong></h1>
 			<p style="font-size: 20px; color: black;">
 				The volume of data produced and recorded by modern systems has exploded.
 				This data represents an enormous and often untapped wealth of information.
-				Turn the data into powerful new insight and intelligence.
+				Turn raw data into powerful new insight.
+				Acerta uses your machine data to detect anomalies in system behavior and to identify conditions leading to failure.
+				<br/>
+				<a href="anomaly-detection.html">Read more</a>
 			</p>
 
 			<!-- <div class="row mt30"> -->
@@ -290,7 +295,7 @@
 			<p style="font-size: 20px; color: black;">
 				Acerta has been successfully applied in multiple case studies and pilot projects.
 				<br/>
-				<a href="features.html">Read more</a>
+				<a href="success.html">Read more</a>
 			</p>
 <!-- 				<div class="">
 					<article class="boxIcon" data-nekoanim="fadeIn" data-nekodelay="200">
@@ -402,7 +407,7 @@
 						<h2 style="font-size: 24px;">Anomaly Detection</h2>
 					</div>
 					<p style="margin-left: -48px; margin-right: 12px;">
-						Identify areas that require attention. Detect anomalies in system operational
+						Identify areas that require attention. Detect anomalies in operational
 						real-time behavior and during post-mortem analysis. Identify irregularities
 						and issues much quicker.
 					</p>
@@ -416,7 +421,7 @@
 						<h2 style="font-size: 24px;">Root Cause Analysis</h2>
 					</div>
 					<p style="margin-left: -48px; margin-right: 12px;">
-						Establish the root cause of the anomaly by identifying the outlying signals.
+						Establish the root cause of the anomaly by identifying trends leading to the problem and the signals responsible.
 					</p>
 				</article>
 			</div>
@@ -444,8 +449,8 @@
 						<h2 style="font-size: 24px;">Prognosis</h2>
 					</div>
 					<p style="margin-left: -48px; margin-right: 12px;">
-						Acerta allows you to predict the time at which a system or a
-						component will no longer perform its intended function.
+						Acerta helps you predict the time at which a system or a
+						component will no longer perform optimally and correctly.
 					</p>
 				</article>
 			</div>
@@ -458,7 +463,7 @@
 					</div>
 					<p style="margin-left: -48px; margin-right: 12px;">
 						Use Acerta on the cloud to explore the trends and to perform visual analysis on the data.
-						Use our service API to gain access to a library of advanced analysis algorithms
+						Use our service API to gain access to a library of advanced analysis algorithms.
 					</p>
 				</article>
 			</div>

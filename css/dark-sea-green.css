@@ -1,4 +1,4 @@
-/* 
+/*
     Document   : colors
     Author     : Little Neko
     Description: template colors
@@ -13,10 +13,10 @@
 #PARALLAX STUFF
 #LINKS AND BUTTONS
 #HEADER
-#MAIN MENU 
-#FOOTER 
+#MAIN MENU
+#FOOTER
 #HOME
-#PAGES 
+#PAGES
 #SLIDERS
 #BLOG
 #PORTFOLIO
@@ -109,7 +109,7 @@ h1 strong {
 }
 h2 i {color:#999}
 .subTitle  {
-	color:#999;	
+	color:#999;
 }
 .largeQuote {background:#FDFDFD; border-top: 1px dashed #eee; border-bottom: 1px dashed #eee;}
 .title {
@@ -237,7 +237,7 @@ ul.iconsList li a:hover, ul.iconsList i {color:#22aba6;}
 ================================================== */
 /* HEADER
 ================================================== */
-@media(min-width:768px){
+@media(min-width:992px){
 	ul.quickMenu li a, .header3 .contactPhone, .header3 #preHeader .socialNetwork .iconRounded {color:#999;}
 	ul.quickMenu li a:hover, #preHeader .socialNetwork i:hover{ color: #22ABA6;}
 	#preHeader .socialNetwork i {
@@ -248,7 +248,7 @@ ul.iconsList li a:hover, ul.iconsList i {color:#22aba6;}
 /* END HEADER
 ================================================== */
 
-/* MAIN MENU 
+/* MAIN MENU
 ================================================== */
 
 #mainHeader{
@@ -291,8 +291,8 @@ ul.iconsList li a:hover, ul.iconsList i {color:#22aba6;}
 
 @media(max-width:767px){}
 
-@media(min-width:768px){
-	
+@media(min-width:992px){
+
 	/* normal header (no class on body) */
 	.navbar-nav ul {background:#333;}
 	.navbar-nav ul li a:hover, .navbar-nav ul li.hover>a{background:#22aba6; color:#fff;}
@@ -302,11 +302,11 @@ ul.iconsList li a:hover, ul.iconsList i {color:#22aba6;}
 
 	.nekoMegaMenu {background:#444;}
 	.nekoMegaMenu h2 {color:#eee;}
-	
+
 	#boxedLayout {background: #22aba6;}
 
 
-	
+
 }
 
 @media(min-width:992px){}
@@ -351,9 +351,9 @@ ul.iconsList li a:hover, ul.iconsList i {color:#22aba6;}
 
 @media(max-width:767px){}
 
-@media(min-width:768px){
-	
-	
+@media(min-width:992px){
+
+
 
 	/* Header 1 */
 	.header1 .navbar-default .navbar-nav > li > a.active, .header1 .navbar-default .navbar-nav>li>a:hover, .header1 .navbar-default .navbar-nav>li.hover>a,.header1 #resMainMenu li.active>a {
@@ -373,7 +373,7 @@ ul.iconsList li a:hover, ul.iconsList i {color:#22aba6;}
 	.header2 .navbar-nav ul li a {color:#fff;}
 	.header2 .navbar-nav ul li a:hover {background:#fff; color:#22ABA6;}
 
-	/*** header 3 ***/	
+	/*** header 3 ***/
 	.header3 .navbar-default .navbar-nav > li > a {border-left:1px solid #eee;}
 
 
@@ -398,7 +398,7 @@ ul.iconsList li a:hover, ul.iconsList i {color:#22aba6;}
 	.header5 .navbar-nav ul li a {color:#fff;}
 	.header5 .navbar-nav ul li a:hover, .header5 .navbar-nav ul li.hover > a {background:#fff;color:#22ABA6;}
 	.header5 #mainMenu .navbar-nav ul li a {border-color:rgba(255,255,255,0.25);}
-	
+
 }
 
 @media(min-width:992px){}
@@ -407,11 +407,11 @@ ul.iconsList li a:hover, ul.iconsList i {color:#22aba6;}
 
 /*** END MEDIA QUERIES ***/
 
-/* END MAIN MENU 
+/* END MAIN MENU
 ================================================== */
 
 
-/* FOOTER 
+/* FOOTER
 ================================================== */
 
 footer {
@@ -426,7 +426,7 @@ footer h1,footer h2,footer h3,footer h4{color:#777; font-weight:300;}
 	border-top:1px dashed #ccc;
 }
 
-/* END FOOTER 
+/* END FOOTER
 ================================================== */
 
 /* HOME
@@ -452,8 +452,8 @@ ul#navTrail li#navTrailLast {color:#fff;}
 
 /** sidebar **/
 
-nav#subnav ul li a {border-bottom:1px solid #eee ; color:#aaa;} 
-nav#subnav ul li a.active, nav#subnav ul li a:hover{border-bottom-color:#22aba6 ; color:#22aba6;} 
+nav#subnav ul li a {border-bottom:1px solid #eee ; color:#aaa;}
+nav#subnav ul li a.active, nav#subnav ul li a:hover{border-bottom-color:#22aba6 ; color:#22aba6;}
 
 /* END PAGES
 ================================================== */
@@ -586,7 +586,7 @@ section#projectDescription {
 }
 .pinInfo li a {color:#fff;}
 .iconLinks a:hover i, .pinInfo li a:hover{text-shadow: 0 0 5px #FFF;}
- 
+
 .imgHover figcaption {
 	background: #22aba6;
 	color: #fff;
@@ -602,9 +602,9 @@ section#projectDescription {
 ================================================== */
 /* Preloader one page */
 #preloader {
-	background-color:#22aba6; /* change if the mask should have another color then white */	
+	background-color:#22aba6; /* change if the mask should have another color then white */
 }
- 
+
 /*** Scroll up Button ***/
 #nekoToTop{
 	color:#22aba6;
@@ -613,7 +613,7 @@ section#projectDescription {
 }
 #nekoToTop:hover{
 	color:#fff;
-	background:#22aba6;	
+	background:#22aba6;
 }
 
 /** focus color ***/
@@ -717,7 +717,7 @@ section#projectDescription {
 .boxContent h2, .boxContent h3 {color:#22aba6;}
 /*** Feature box **/
 
-.boxFeature i {color:#22aba6 ;} 
+.boxFeature i {color:#22aba6 ;}
 
 /*** Focus box **/
 

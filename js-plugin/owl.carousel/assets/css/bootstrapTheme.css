@@ -4797,7 +4797,7 @@ a.badge:focus {
 .visible-desktop {
   display: inherit !important;
 }
-@media (min-width: 768px) and (max-width: 979px) {
+@media (min-width: 992px) and (max-width: 979px) {
   .hidden-desktop {
     display: inherit !important;
   }
@@ -4811,7 +4811,7 @@ a.badge:focus {
     display: none !important;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .hidden-desktop {
     display: inherit !important;
   }
@@ -5185,7 +5185,7 @@ a.badge:focus {
     margin-left: 0;
   }
 }
-@media (min-width: 768px) and (max-width: 979px) {
+@media (min-width: 992px) and (max-width: 979px) {
   .row {
     margin-left: -20px;
     *zoom: 1;
@@ -5525,7 +5525,7 @@ a.badge:focus {
     width: 28px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   body {
     padding-left: 20px;
     padding-right: 20px;

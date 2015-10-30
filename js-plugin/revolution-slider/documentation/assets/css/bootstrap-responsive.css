@@ -38,21 +38,21 @@
     width: 100%;
     min-height: 28px;
     /* Make inputs at least the height of their button counterpart */
-  
+
     /* Makes inputs behave like true block-level elements */
-  
+
     -webkit-box-sizing: border-box;
     /* Older Webkit */
-  
+
     -moz-box-sizing: border-box;
     /* Older FF */
-  
+
     -ms-box-sizing: border-box;
     /* IE8 */
-  
+
     box-sizing: border-box;
     /* CSS3 spec*/
-  
+
   }
   .input-prepend input[class*="span"], .input-append input[class*="span"] {
     width: auto;
@@ -95,7 +95,7 @@
     position: static;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .container {
     width: auto;
     padding: 0 20px;
@@ -114,7 +114,7 @@
     margin: 0;
   }
 }
-@media (min-width: 768px) and (max-width: 979px) {
+@media (min-width: 992px) and (max-width: 979px) {
   .row {
     margin-left: -20px;
     *zoom: 1;

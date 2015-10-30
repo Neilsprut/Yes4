@@ -22,7 +22,7 @@ $(window).on("load resize",function(e){
 
 
 		//mobile detection
-		if(Modernizr.mq('only all and (max-width: 767px)') ) {
+		if(Modernizr.mq('only all and (max-width: 992px)') ) {
 			isMobile = true;
 		}else{
 			isMobile = false;
@@ -1205,7 +1205,7 @@ function initializeMainMenu() {
 	//var action0 = (isMobile === false)?'mouseenter':'click';
 	//var action1 = (isMobile === false)?'mouseleave':'click';
 
-	if(Modernizr.mq('only all and (max-width: 767px)') ) {
+	if(Modernizr.mq('only all and (max-width: 992px)') ) {
 
 
 			// Responsive Menu Events

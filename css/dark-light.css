@@ -288,7 +288,7 @@ ul.quickMenu li a:hover {color:#555;}
 
 @media(max-width:767px){}
 
-@media(min-width:768px){
+@media(min-width:992px){
 
 	/* normal header (no class on body) */
 	.navbar-nav ul {background:#333;}
@@ -347,7 +347,7 @@ ul.quickMenu li a:hover {color:#555;}
 
 @media(max-width:767px){}
 
-@media(min-width:768px){
+@media(min-width:992px){
 
 
 

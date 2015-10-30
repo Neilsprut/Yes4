@@ -14,7 +14,7 @@
 #top-nav.navbar .nav{
 	margin: 8px 0px;
 }
-	
+
 #top-nav.navbar .nav > li > a {
 	padding: 6px 12px;
 	margin: 0px;
@@ -86,7 +86,7 @@ pre.pre-show{
 .nav-tabs{
 	margin-top: 20px;
 	margin-bottom: 0px;
-	
+
 }
 .tab-content{
 	border-left: 1px solid #ddd;
@@ -95,7 +95,7 @@ pre.pre-show{
 	-webkit-border-radius: 0px 0px 4px 4px;
 	-moz-border-radius: 0px 0px 4px 4px;
 	border-radius: 0px 0px 4px 4px;
-	
+
 }
 /* Content */
 .table th, .table td {
@@ -376,23 +376,23 @@ background: url('../img/AjaxLoader.gif') no-repeat center center #aebab6;
 
 }
 
-/*NO MORE TABLES!! ;) 
+/*NO MORE TABLES!! ;)
 */
-@media (max-width: 767px) {
+@media (max-width: 992px) {
 
-	table, thead, tbody, th, td, tr { 
-		display: block; 
+	table, thead, tbody, th, td, tr {
+		display: block;
 	}
-	thead tr { 
+	thead tr {
 		display: none;
 	}
 	tr { border: 0px solid #ccc; margin-bottom: 10px; }
-	
-	td:before { 
+
+	td:before {
 		top: 6px;
 		left: 6px;
-		width: 45%; 
-		padding-right: 10px; 
+		width: 45%;
+		padding-right: 10px;
 		white-space: nowrap;
 	}
 

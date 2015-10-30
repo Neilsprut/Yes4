@@ -136,7 +136,7 @@ body {
   padding-left: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .bs-footer {
     text-align: left;
   }
@@ -180,7 +180,7 @@ body {
   overflow: hidden;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 992px) {
   .bs-social {
     text-align: left;
   }
@@ -247,7 +247,7 @@ body {
   color: #fff;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 992px) {
   .bs-masthead {
     text-align: left;
     padding-top:    140px;
@@ -292,7 +292,7 @@ body {
   position: relative;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 992px) {
   .bs-header {
     font-size: 21px;
     text-align: left;
@@ -358,7 +358,7 @@ body {
   display: none; /* hide what I assume are tracking images */
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 992px) {
   .carbonad {
     margin: 0 !important;
     border-radius: 4px;
@@ -600,7 +600,7 @@ h1[id] {
 }
 
 /* Make the examples and snippets not full-width */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 992px) {
   .bs-example {
     margin-left: 0;
     margin-right: 0;
@@ -735,7 +735,7 @@ h1[id] {
 .bs-navbar-bottom-example .navbar {
   margin-bottom: 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .bs-navbar-top-example .navbar-fixed-top,
   .bs-navbar-bottom-example .navbar-fixed-bottom {
     position: absolute;
@@ -970,7 +970,7 @@ h1[id] {
   background-color: rgba(86,61,124,.1);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .bs-glyphicons li {
     width: 12.5%;
   }

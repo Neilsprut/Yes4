@@ -150,7 +150,7 @@ pre code{white-space: pre-line;}
 @media(max-width:767px){
 }
 
-@media(min-width:768px){
+@media(min-width:992px){
 	.navbar>.container .navbar-brand{margin-left: 0;}
 	.navbar-collapse {padding-right:0;}
 	.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
@@ -461,7 +461,7 @@ hr.lineSmall {
 
 @media(max-width:767px){}
 
-@media(min-width:768px){
+@media(min-width:992px){
 	#boxedLayout {padding-top: 22px;}
 	#boxedLayout #globalWrapper{
 		width:768px;
@@ -727,7 +727,7 @@ hr {
 
 @media(max-width:767px){}
 
-@media(min-width:768px){
+@media(min-width:992px){
 
 	body{padding-top: 88px;}
 	h1 {
@@ -840,7 +840,7 @@ a.btnRight{float:right;}
 	}
 }
 
-@media(min-width:768px){
+@media(min-width:992px){
 
 }
 
@@ -903,7 +903,7 @@ a.btnRight{float:right;}
 
 @media(max-width:767px){}
 
-@media(min-width:768px){}
+@media(min-width:992px){}
 
 @media(min-width:992px){}
 
@@ -964,7 +964,7 @@ body#onePage #mainHeader.navbar{ border: none;}
 
 @media(max-width:767px){}
 
-@media(min-width:768px){.blockCenter{ width: 768px;}}
+@media(min-width:992px){.blockCenter{ width: 768px;}}
 
 @media(min-width:992px){.blockCenter{ width: 992px;}}
 
@@ -1018,7 +1018,7 @@ ul.quickMenu li a.linkLeft {
 /*** MEDIA QUERIES ***/
 @media(max-width:767px){}
 
-@media(min-width:768px){
+@media(min-width:992px){
 	#fullScreenSliderWrapper h1 {font-size:80px;}
 	.header1 #preHeader, .header3 #preHeader, .header5 #preHeader {
 		display:block!important;
@@ -1079,7 +1079,7 @@ ul.quickMenu li a.linkLeft {
 /*** MEDIA QUERIES ***/
 @media(max-width:767px){}
 
-@media(min-width:768px){
+@media(min-width:992px){
 
 	/* Header 1 */
 	body.header1 { padding-top: 128px; }
@@ -1241,7 +1241,7 @@ ul.quickMenu li a.linkLeft {
 
 }
 
-@media(min-width:768px){
+@media(min-width:992px){
 
 	#mainHeader .pull-right{ float:right !important; }
 
@@ -1354,7 +1354,7 @@ ul.quickMenu li a.linkLeft {
 
 @media(max-width:767px){}
 
-@media(min-width:768px){#home{padding-top:54px;}}
+@media(min-width:992px){#home{padding-top:54px;}}
 
 @media(min-width:992px){}
 
@@ -1579,7 +1579,7 @@ a#nextslide:hover, a#prevslide:hover {
 	.owlCaption h2 {margin:0;}
 }
 
-@media(min-width:768px){
+@media(min-width:992px){
 
 	.camera_neko_skin .camera_caption h1 {font-size: 66px;}
 	.camera_neko_skin .camera_caption h2 {font-size: 22px;}
@@ -1637,7 +1637,7 @@ a#nextslide:hover, a#prevslide:hover {
 	#homeCarousel h2 {font-size: 12px;}
 }
 
-@media(min-width:768px){
+@media(min-width:992px){
 	/* OWL Carousel */
 	#homeCarousel h1 {font-size:40px; text-align: left;}
 	#homeCarousel h2 {text-align:left;}
@@ -1754,7 +1754,7 @@ nav#subnav{padding:0;}
 
 #videoBg{ height:450px; position:relative; }
 
-@media(min-width:768px){
+@media(min-width:992px){
 
 	.formatIcon i {font-size: 33px;}
 }
@@ -1871,7 +1871,7 @@ textarea#comments {height:87px;}
 
 @media(max-width:767px){}
 
-@media(min-width:768px){
+@media(min-width:992px){
 	.page-header .projectTitle {text-align: left;}
 	#verify {margin-left:15px; margin-top: 0;}
 
@@ -2244,7 +2244,7 @@ p.credits {
 
 @media(max-width:767px){}
 
-@media(min-width:768px){}
+@media(min-width:992px){}
 
 @media(min-width:992px){}
 
