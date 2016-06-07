@@ -59,6 +59,7 @@
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
     ga('create', 'UA-68447190-1', 'auto');
+    ga('require', 'linkid');
     ga('send', 'pageview');
 
   </script>
@@ -102,13 +103,11 @@
                 <li class="sep"></li>
 
                 <li class="primary">
-                  <a href="solutions.html"  class="firstLevel">Solutions</a>
-                </li>
-
-                <li class="sep"></li>
-
-                <li class="primary">
-                  <a href="industries.html" class="firstLevel">Industries</a>
+                  <a href="solutions.html"  class="firstLevel hasSubMenu">Solutions</a>
+                  <ul class="subMenu">
+                    <li><a href="solutions.html">Acerta CHECK</a></li>
+                    <li class="last"><a href="industries.html">Industries</a></li>
+                  </ul>
                 </li>
 
                 <li class="sep"></li>
@@ -150,41 +149,25 @@
 
       <!-- company profile -->
       <section id="profile" class="pt30 pb30">
-        <div class="container">
-          <p>
-            Acerta provides a machine intelligence solution that turns raw machine data into informed decisions.
-          </p>
-          <p>
-            Our state of the art machine learning algorithms use historical and
-            current machine data to automatically identify anomalies in machine performance,
-            zero in on the root cause of the problem, and predict failures before they happen.
-            Acerta can analyze large amounts of machine telemetry data collected by our customer's
-            existing data acquisition systems. We provide a remote data analysis service
-            that can be established on Acerta's cloud, a local company cloud,
-            and on small on-board units. The automated analysis transforms company day-to-­day
-            operations by increasing operaton efficiency, reducing equipment downtime,
-            lowering operating costs, and improving overall productivity.
+        <div class="container" style="font-family: roboto; font-size: 16px; line-height: 24px;">
+          <p style="color: white;">
+            Acerta provides machine intelligence solutions that turn raw machine data into informed decisions.
           </p>
 
-          <p>
-            Our primary customer base spans the automotive sector, including OEMs, parts suppliers,
-            and providers of vehicle test and monitoring equipment. Our algorithms have
-            been validated and are being applied in aerospace for airplane health management
-            and engine testing. Acerta is continuing to expand its customer base and
-            is looking into other industrial markets including advanced manufacturing and
-            production plants.
+          <p style="color: white;">
+            Acerta Systems Analytics was founded by Greta Cutulenco and Sebastian Fischmeister
+            and is headquartered in Waterloo, Canada. The company got its roots from
+            research conducted at the Univerity of Waterloo. Acerta is currently part of the
+            <a href="http://velocity.uwaterloo.ca/companies/acerta/">Velocity inclubator</a>
+            and Communitech.
           </p>
 
-          <p>
-            Acerta was founded in 2014 by Greta Cutulenco and Sebastian Fischmeister
-            and is headquartered in Waterloo, Canada.
-          </p>
         </div>
       </section>
       <!-- -->
     </section>
 
-    <section id="contact-team" class="">
+    <section id="contact-team" class="" >
       <header class="page-header" style="background-color: #a5c542;">
         <div class="container">
           <div class="row">
@@ -242,6 +225,24 @@
         </div>
       </section>
       <!-- -->
+
+      <section style="background-color: white;">
+        <div class="container pt15">
+          <div class="row text-center">
+            <div class="col-md-3 col-sm-6" style="display: inline-block; vertical-align: middle; float: none;">
+              <img src="images/team/velocity.png" class="img-responsive img-rounded" style="display: block; margin-left: auto; margin-right: auto;">
+            </div>
+            <div class="col-md-3 col-sm-6" style="display: inline-block; vertical-align: middle; float: none;">
+              <img src="images/team/waterloo.png" class="img-responsive img-rounded" style="display: block; margin-left: auto; margin-right: auto;">
+            </div>
+
+            <div class="col-md-3 col-sm-6" style="display: inline-block; vertical-align: middle; float: none;">
+              <img src="images/team/communitech.png" class="img-responsive img-rounded" style="display: block; margin-left: auto; margin-right: auto;">
+            </div>
+          </div>
+        </div>
+      </section>
+
     </section>
 
     <!-- footer -->
@@ -249,13 +250,17 @@
       <div class="row">
         <div class="col-md-12" style="text-align: center;">
           <article>
-            <p> Follow Us &nbsp;&nbsp;
+            <p>
               <a href="http://twitter.com/AcertaAnalytics" class="tips" title="" data-original-title="Twitter">
                 <i class="icon-twitter-bird iconRounded"></i>
               </a>
               &nbsp;
               <a href="http://www.linkedin.com/company/acerta-systems-analytics" class="tips" title="" data-original-title="LinkedIn">
                 <i class="icon-linkedin-1 iconRounded"></i>
+              </a>
+              &nbsp;
+              <a href="mailto:info@acerta.ca" class="tips" title="" data-original-title="Email">
+                <i class=" icon-mail-alt iconRounded"></i>
               </a>
             </p>
             <p style="font-size: 12px;">Copyright © 2015 Acerta Systems Analytics Inc. / All rights reserved.</p>
