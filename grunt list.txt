@@ -1,0 +1,5 @@
+jshint - lint my code
+concat - all the libraries used (bower mapper)
+sass - convert sass to css
+uglify - to make it easier to read
+watch - watch these files

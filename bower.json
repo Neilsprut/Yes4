@@ -1,0 +1,26 @@
+{
+  "name": "acerta.github.io",
+  "description": "company website",
+  "main": "index.html",
+  "authors": [
+    "Himesh Patel <hpatel@acerta.ca"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Acerta/Acerta.github.io",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~3.1.1",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "modernizr": "3.3.1"
+  }
+}
