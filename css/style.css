@@ -9,7 +9,7 @@ html, body, #globalWrapper {
   float: none !important; }
 
 .row {
-  padding: 20px; }
+  padding: 20px 50px; }
 
 /* ------  Custom edits go here ------- */
 /* ------    Navbar   ------- */
@@ -55,9 +55,11 @@ html, body, #globalWrapper {
     padding-top: 200px; }
 
 /* ------   Features  ------- */
-.features .logo {
+.features .logo, .features .description {
   padding: 20px; }
-.features .description {
+
+/* ------   CTA  ------- */
+.cta-btn {
   padding: 20px; }
 
 /*# sourceMappingURL=style.css.map */
