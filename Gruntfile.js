@@ -48,6 +48,8 @@ module.exports = function(grunt) {
     // }
   });
 
-  grunt.registerTask('default', ['jshint', 'sass', 'uglify']);
+  grunt.registerTask('default', ['jshint', 'sass:minify', 'uglify']);
+
+  grunt.registerTask('dev', ['jshint', 'sass:pretty', 'uglify']);
 
 };
