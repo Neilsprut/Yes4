@@ -9,21 +9,21 @@ html, body, #globalWrapper {
   float: none !important; }
 
 .row {
-  padding: 20px 50px; }
+  padding: 20px 50px;
+  margin-right: 0px;
+  margin-left: 0px; }
 
 /* ------  Custom edits go here ------- */
 /* ------    Navbar   ------- */
 .navbar {
-  background-color: #000; }
+  background-color: #0a0a0a; }
 
 .navbar-toggle {
-  border-color: #FFF; }
+  border-color: #FFF;
+  margin-top: 20px;
+  margin-bottom: 21px; }
   .navbar-toggle .icon-bar {
     background-color: #FFF; }
-
-.navbar-brand {
-  height: 75px;
-  padding: 10px 15px; }
 
 .nav > li > a {
   padding-top: 30px;
@@ -54,12 +54,31 @@ html, body, #globalWrapper {
     position: relative;
     padding-top: 200px; }
 
-/* ------   Features  ------- */
-.features .logo, .features .description {
-  padding: 20px; }
-
 /* ------   CTA  ------- */
-.cta-btn {
-  padding: 20px; }
+.cta .btn {
+  height: 200px;
+  width: 212px;
+  white-space: normal;
+  font-size: 25px;
+  padding: 25px; }
+
+/* ------ Footer ------- */
+footer {
+  background-color: #0a0a0a; }
+  footer p {
+    font-size: 12px;
+    margin-top: 12px; }
+  footer .social-links a {
+    color: #0a0a0a;
+    background-color: #FFF;
+    border-radius: 50%;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    padding-top: 7px;
+    margin-left: 10px; }
+    footer .social-links a:hover {
+      background-color: #a5c542; }
 
 /*# sourceMappingURL=style.css.map */

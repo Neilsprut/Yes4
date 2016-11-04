@@ -12,6 +12,8 @@ html,body,#globalWrapper {
 
 .row {
   padding: 20px 50px;
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
 /* ------  Custom edits go here ------- */
@@ -20,20 +22,17 @@ html,body,#globalWrapper {
 /* ------    Navbar   ------- */
 
 .navbar {
-  background-color: #000;
+  background-color: $secondary-color;
 
 }
 
 .navbar-toggle {
   border-color: #FFF;
+  margin-top: 20px;
+  margin-bottom: 21px;
   .icon-bar {
     background-color: #FFF;
   }
-}
-
-.navbar-brand {
-  height: 75px;
-  padding: 10px 15px;
 }
 
 .nav > li > a {
@@ -71,15 +70,39 @@ html,body,#globalWrapper {
   }
 }
 
-/* ------   Features  ------- */
+/* ------   CTA  ------- */
+.cta .btn {
+  height: 200px;
+  width: 212px;
+  white-space: normal;
+  font-size: 25px;
+  padding: 25px;
+}
 
-.features {
-  .logo, .description {
-    padding: 20px;
+/* ------ Footer ------- */
+footer {
+  background-color: $secondary-color;
+  p {
+    font-size: 12px;
+    margin-top: 12px;
+  }
+  .social-links a {
+    color: $secondary-color;
+    background-color: #FFF;
+    border-radius: 50%;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    padding-top: 7px;
+    margin-left: 10px;
+    &:hover {
+      background-color: $primary-color;
+    }
   }
 }
 
-/* ------   CTA  ------- */
-.cta-btn {
-  padding: 20px;
-}
+
+
+
+
