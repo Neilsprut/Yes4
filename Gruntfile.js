@@ -52,4 +52,6 @@ module.exports = function(grunt) {
 
   grunt.registerTask('dev', ['jshint', 'sass:pretty', 'uglify']);
 
+  grunt.registerTask('css', ['sass:pretty']);
+
 };

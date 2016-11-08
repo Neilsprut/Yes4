@@ -7,7 +7,9 @@ html,body,#globalWrapper {
 
 /* Bootstrap edit */
 .center-block {
-  float: none !important
+  display: inline-block;
+  float: none !important;
+  margin: 0 auto;
 }
 
 .row {
@@ -66,7 +68,7 @@ body {
   }
   .content {
     color: #FFF;
-    font-size: 40px;
+    font-size: 50px;
     position: relative;
     padding-top: 200px;
   }
@@ -107,6 +109,15 @@ footer {
 
 /* ----------  About Us Page ---------- */
 
+.case-studies {
+  img {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+/* ----------  About Us Page ---------- */
+
 /* ------ Team ------- */
 .our-story {
   background-color: #f9f9f9;
@@ -116,5 +127,19 @@ footer {
   img {
     width: 250px;
   }
+  .longfix {
+    font-size: 23px;
+  }
 }
+
+.contact-form {
+  .input-group {
+    margin-bottom: 10px;
+  }
+  button {
+    width: 100%;
+  }
+}
+
+
 
