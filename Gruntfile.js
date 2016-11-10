@@ -11,35 +11,42 @@ module.exports = function(grunt) {
     jshint: {
       files: ['src/js/*.js'],
       options: {
-        "curly": true,
-        "eqeqeq": true,
-        "undef": true,
+        "browser": true,
+        "esnext": true,
+        "force": true,
         "globals": {
-          jQuery: true
-        }
+          "console": false
+        },
+        "strict": "global",
+        "undef": true,
+        "unused": true,
       }
     },
     sass: {
-        pretty: {
-            src: ['src/sass/style.scss'],
-            dest: 'css/style.css'
+      pretty: {
+        src: ['src/sass/style.scss'],
+        dest: 'css/style.css'
+      },
+      minify: {
+        options: {
+          style: 'compressed'
         },
-        minify: {
-            options: {
-                style: 'compressed'
-            },
-            src: ['src/sass/style.scss'],
-            dest: 'css/style.css'
-        }
+        src: ['src/sass/style.scss'],
+        dest: 'css/style.css'
+      }
     },
     uglify: {
       options: {
-        compress: {}
+        mangle: false,
+        beautify: {
+          width: 80,
+          beautify: true
+        }
       },
       my_target: {
-          files: {
-              'js/script.js': ['src/js/*.js']
-          }
+        files: {
+          'js/script.js': ['src/js/*.js']
+        }
       }
     }
     // watch: {
@@ -48,7 +55,7 @@ module.exports = function(grunt) {
     // }
   });
 
-  grunt.registerTask('default', ['jshint', 'sass:minify', 'uglify']);
+  grunt.registerTask('default', ['jshint', 'sass:minify', 'uglify:minify']);
 
   grunt.registerTask('dev', ['jshint', 'sass:pretty', 'uglify']);
 

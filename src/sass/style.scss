@@ -28,14 +28,15 @@ body {
 
 .navbar {
   background-color: $secondary-color;
+  padding: 0 65px;
 }
 
 .navbar-toggle {
-  border-color: #FFF;
+  border-color: $white;
   margin-top: 20px;
   margin-bottom: 21px;
   .icon-bar {
-    background-color: #FFF;
+    background-color: $white;
   }
 }
 
@@ -43,7 +44,7 @@ body {
   padding-top: 30px;
   padding-bottom: 25px;
   font-size: 18px;
-  color: #FFF;
+  color: $white;
   &:hover, &:focus {
     background-color: $primary-color;
   }
@@ -67,33 +68,46 @@ body {
     background: rgba(50, 50, 50, 0.90);
   }
   .content {
-    color: #FFF;
+    color: $white;
     font-size: 50px;
     position: relative;
     padding-top: 200px;
   }
 }
 
+/* ------   Features  ------- */
+ .features {
+  .row {
+    margin-top: 40px;
+  }
+ }
+
+
 /* ------   CTA  ------- */
-.cta .btn {
-  height: 200px;
-  width: 212px;
-  white-space: normal;
-  font-size: 25px;
-  padding: 25px;
+.cta {
+  h4 {
+    font-style: italic;
+  }
+  .btn {
+    height: 200px;
+    width: 212px;
+    white-space: normal;
+    font-size: 25px;
+    padding: 25px;
+  }
 }
 
 /* ------ Footer ------- */
 footer {
   background-color: $secondary-color;
-  color: #FFF;
+  color: $white;
   p {
     font-size: 12px;
     margin-top: 12px;
   }
   .social-links a {
     color: $secondary-color;
-    background-color: #FFF;
+    background-color: $white;
     border-radius: 50%;
     display: inline-block;
     width: 35px;
@@ -107,22 +121,18 @@ footer {
   }
 }
 
-/* ----------  About Us Page ---------- */
+/* ----------  Case Study Page ---------- */
 
 .case-studies {
   img {
     width: 100%;
-    padding: 15px;
+    margin-top: 15px;
   }
 }
 
 /* ----------  About Us Page ---------- */
 
 /* ------ Team ------- */
-.our-story {
-  background-color: #f9f9f9;
-}
-
 .team {
   img {
     width: 250px;
