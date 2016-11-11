@@ -15,7 +15,8 @@ module.exports = function(grunt) {
         "esnext": true,
         "force": true,
         "globals": {
-          "console": false
+          "console": false,
+          "$": true
         },
         "strict": "global",
         "undef": true,

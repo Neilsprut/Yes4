@@ -61,7 +61,8 @@ function handleFormSubmit(event) { // handles form submit withtout any jquery
     // url encode form data for sending as post data
     var encoded = Object.keys(data).map(function(k) {
       return encodeURIComponent(k) + '=' + encodeURIComponent(data[k])
-    }).join('&')
+    }).join('&');
+    console.log(encoded);
     xhr.send(encoded);
   }
 }
@@ -71,5 +72,40 @@ function loaded() {
   // bind to the submit event of our form
   myForm = document.getElementById('gform');
   myForm.addEventListener("submit", handleFormSubmit, false);
-};
+}
+
 document.addEventListener('DOMContentLoaded', loaded, false);
+
+// document.getElementById("myModal").addEventListener("show.bs.modal", function (event) {
+//   console.log("working");
+//   var button = event.relatedTarget;
+//   var title = button.dataset.title;
+//   var modal = this;
+//   modal.getElementsByClassName('modal-title')[0].innerText = title;
+// });
+
+$('#myModal').on('show.bs.modal', function(event) {
+  var button = $(event.relatedTarget); // Button that triggered the modal
+  var title = button.data('title'); // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this);
+  modal.find('.modal-title').text(title);
+});
+
+$('#modalSubmit').on('click', function(e) {
+  e.preventDefault();
+  console.log("working");
+  $.ajax({
+    url: 'https://script.google.com/macros/s/AKfycbzgCP38t41IpaYC3bqET1QigLZy9nLJLFDqS2NZz2ReOWHtffk/exec',
+    type: 'POST',
+    datatype: 'xml',
+    data: $('#modalForm').serialize(),
+    success: function(data) {
+      $('#myModal').find('.modal-title').text("yea");
+    },
+    error: function(data) {
+      $('#myModal').find('.modal-title').text("naw");
+    }
+  });
+});

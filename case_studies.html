@@ -40,6 +40,32 @@
   ================================================== -->
   <!-- globalWrapper -->
   <div id="globalWrapper" class="localscroll">
+    <!-- .modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">$Title</h4>
+          </div>
+          <form id="modalForm">
+            <div class="modal-body">
+              <p>We'll send the case study to your email address below</p>
+              <div class="form-group">
+                <input id="email" name="email" type="email" class="form-control" placeholder="Email Address" aria-describedby="email" required>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" value="submit" class="btn btn-primary" id="modalSubmit">Submit Email</button>
+            </div>
+          </form>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
     <header>
       <nav class="navbar navbar-fixed-top">
         <div class="container-fluid">
@@ -81,40 +107,41 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4 col-md-offset-2">
-            <div class="col-md-6">
+          <div class="col-md-5 col-md-offset-1">
+            <div class="col-md-5">
               <img src="images/case_study.jpg">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-7">
               <h2>Case Study</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sint, a eum in provident veritatis aut, ea, sapiente iure atque ad. Harum illum doloremque doloribus, dolor sunt, aspernatur distinctio iste.</p>
             </div>
+            <a class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-title="Case 1">Download Case Study</a>
           </div>
-          <div class="col-md-4">
-            <div class="col-md-6">
-              <img class="center-block" src="images/case_study.jpg">
+          <div class="col-md-5">
+            <div class="col-md-5">
+              <img src="images/case_study.jpg">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-7">
               <h2>Case Study</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sint, a eum in provident veritatis aut, ea, sapiente iure atque ad. Harum illum doloremque doloribus, dolor sunt, aspernatur distinctio iste.</p>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4 col-md-offset-2">
-            <div class="col-md-6">
+          <div class="col-md-5 col-md-offset-1">
+            <div class="col-md-5">
               <img src="images/case_study.jpg">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-7">
               <h2>Case Study</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sint, a eum in provident veritatis aut, ea, sapiente iure atque ad. Harum illum doloremque doloribus, dolor sunt, aspernatur distinctio iste.</p>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="col-md-6">
+          <div class="col-md-5">
+            <div class="col-md-5">
               <img class="center-block" src="images/case_study.jpg">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-7">
               <h2>Case Study</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sint, a eum in provident veritatis aut, ea, sapiente iure atque ad. Harum illum doloremque doloribus, dolor sunt, aspernatur distinctio iste.</p>
             </div>
@@ -166,7 +193,7 @@
   <!-- Bootstrap  -->
   <script src="vendor/bootstrap/dist/js/bootstrap.js"></script>
   <!-- Custom  -->
-  <script type="text/javascript" src="js/custom.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
