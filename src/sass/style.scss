@@ -20,6 +20,7 @@ html,body,#globalWrapper {
 
 body {
   padding-top: 75px;
+  background-color: $primary-color;
 }
 
 /* ----------  Main Page ---------- */
@@ -32,11 +33,11 @@ body {
 }
 
 .navbar-toggle {
-  border-color: $white;
+  border-color: $primary-color;
   margin-top: 20px;
   margin-bottom: 21px;
   .icon-bar {
-    background-color: $white;
+    background-color: $primary-color;
   }
 }
 
@@ -44,9 +45,10 @@ body {
   padding-top: 30px;
   padding-bottom: 25px;
   font-size: 18px;
-  color: $white;
+  color: $primary-color;
   &:hover, &:focus {
-    background-color: $primary-color;
+    color: $primary-color;
+    background-color: $hover;
   }
 }
 
@@ -68,7 +70,7 @@ body {
     background: rgba(50, 50, 50, 0.90);
   }
   .content {
-    color: $white;
+    color: $primary-color;
     font-size: 50px;
     position: relative;
     padding-top: 200px;
@@ -79,6 +81,7 @@ body {
  .how-it-works {
   .row {
     margin-top: 40px;
+    background-color: $primary-color-light;
   }
  }
 
@@ -100,14 +103,14 @@ body {
 /* ------ Footer ------- */
 footer {
   background-color: $secondary-color;
-  color: $white;
+  color: $primary-color;
   p {
     font-size: 12px;
     margin-top: 12px;
   }
   .social-links a {
     color: $secondary-color;
-    background-color: $white;
+    background-color: $primary-color;
     border-radius: 50%;
     display: inline-block;
     width: 35px;
@@ -116,7 +119,7 @@ footer {
     padding-top: 7px;
     margin-left: 10px;
     &:hover {
-      background-color: $primary-color;
+      background-color: $hover;
     }
   }
 }

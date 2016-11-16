@@ -42,7 +42,8 @@ function getFormData() {
 function handleFormSubmit(event) { // handles form submit withtout any jquery
   event.preventDefault(); // we are submitting via xhr below
   var data = getFormData(); // get the values submitted in the form
-  if (!validEmail(data.email)) { // if email is not valid show error
+  // if (!validEmail(data.email)) { // if email is not valid show error
+  if (false) {
     document.getElementById('email-invalid').style.display = 'block';
     return false;
   } else {
@@ -76,32 +77,26 @@ function loaded() {
 
 document.addEventListener('DOMContentLoaded', loaded, false);
 
-// document.getElementById("myModal").addEventListener("show.bs.modal", function (event) {
-//   console.log("working");
-//   var button = event.relatedTarget;
-//   var title = button.dataset.title;
-//   var modal = this;
-//   modal.getElementsByClassName('modal-title')[0].innerText = title;
-// });
 
 $('#myModal').on('show.bs.modal', function(event) {
   var button = $(event.relatedTarget); // Button that triggered the modal
-  var title = button.data('title'); // Extract info from data-* attributes
-  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var title = button.parent().find('h2').text(); // Extract info from data-* attributes
   var modal = $(this);
   modal.find('.modal-title').text(title);
+  modal.find('input#title').val(title + " - Case Study");
 });
 
-$('#modalSubmit').on('click', function(e) {
+$('#modalForm').on('submit', function(e) {
   e.preventDefault();
-  console.log("working");
+  var url = e.target.action;
+  console.log("working " + url);
   $.ajax({
-    url: 'https://script.google.com/macros/s/AKfycbzgCP38t41IpaYC3bqET1QigLZy9nLJLFDqS2NZz2ReOWHtffk/exec',
+    // url: 'https://script.google.com/macros/s/AKfycbzgCP38t41IpaYC3bqET1QigLZy9nLJLFDqS2NZz2ReOWHtffk/exec',
     type: 'POST',
     datatype: 'xml',
     data: $('#modalForm').serialize(),
     success: function(data) {
+      console.log(data);
       $('#myModal').find('.modal-title').text("yea");
     },
     error: function(data) {
@@ -109,3 +104,16 @@ $('#modalSubmit').on('click', function(e) {
     }
   });
 });
+
+
+// var errorIcon = '<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span><span class="sr-only">Error:</span>';
+
+// function resetError(alertDiv) {
+//   alertDiv.html("");
+// }
+
+// console.log(err);
+// registerAlert.append(errorIcon);
+// registerAlert.append("<span>&nbsp;There seems to be a problem. Please try again later.</span><br>");
+// registerAlert.addClass('active');
+
