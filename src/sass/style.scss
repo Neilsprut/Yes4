@@ -48,13 +48,16 @@ h3 {
 }
 
 h4,
-h5 {
+h5, p {
     font-family: "Roboto", sans-serif;
     h4 {
         font-size: 20px;
     }
     h5 {
         font-size: 16px;
+    }
+    p {
+        font-size: 15px;
     }
 }
 
@@ -136,9 +139,15 @@ h5 {
     .btn {
         height: 200px;
         width: 212px;
-        white-space: normal;
-        font-size: 25px;
+        background-color: #A5C542;
+        border: 2px;
+        border-radius: 3px;     
+        font-size: 16px;
         padding: 25px;
+        white-space: normal;
+        &:hover, &:focus {
+          background-color: #87A232;
+        }
     }
 }
 
