@@ -1,19 +1,19 @@
 /* Primary */
-$primary-color: rgba(244, 244, 244, 1) !default;
+$primary-color: rgba(255, 250, 245, 1) !default;
 $primary-color-light: lighten($primary-color, 10%);
 $primary-color-dark: darken($primary-color, 10%);
 
 /* Secondary */
-$secondary-color: rgba(10, 10, 10, 1) !default;
+$secondary-color: rgba(0, 38, 38, 1) !default;
 $secondary-color-light: lighten($secondary-color, 10%);
 $secondary-color-dark: darken($secondary-color, 10%);
 
 /* Hover */
-$hover: rgba(165, 197, 66, 1);
+$hover: rgba(166, 200, 66, 1);
 $hover-active: darken($hover, 10%);
 
 /* Hyperlinks */
-$hyper: rgba(15, 113, 115, 1);
+$hyper: rgba(15, 115, 115, 1);
 
 
 $color1: rgba(240, 93, 94, 1);

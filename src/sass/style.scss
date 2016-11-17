@@ -5,66 +5,73 @@
 html,
 body,
 #globalWrapper {
-    height: 100%;
+  height: 100%;
 }
 
 
 /* Bootstrap edit */
 
+.navbar-fixed-top {
+  border-width: 0px;
+}
+
 .center-block {
-    display: inline-block;
-    float: none !important;
-    margin: 0 auto;
+  display: inline-block;
+  float: none !important;
+  margin: 0 auto;
 }
 
 .row {
-    padding: 10px 50px;
-    margin-right: 0px;
-    margin-left: 0px;
-}
-
-body {
-    padding-top: 75px;
-    background-color: $primary-color;
+  padding: 10px 50px;
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
 
 /* ---------- General Edits ----------*/
 
+
+/* ------ Branding -----*/
+
+body {
+  padding-top: 75px;
+  background-color: $primary-color;
+}
+
 h1,
 h2,
 h3 {
-    font-weight: bold;
-    font-family: "Roboto", sans-serif;
-    h1 {
-        font-size: 60px;
-    }
-    h2 {
-        font-size: 30px;
-    }
-    h3 {
-        font-size: 24px;
-    }
+  font-weight: bold;
 }
 
-h4,
-h5, p {
-    font-family: "Roboto", sans-serif;
-    h4 {
-        font-size: 20px;
-    }
-    h5 {
-        font-size: 16px;
-    }
-    p {
-        font-size: 15px;
-    }
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 15px;
 }
 
 a {
-  color: #0F7173;
+  color: $hyper;
   &:hover {
-    color: #A5C542;
+    color: $hover;
   }
 }
 
@@ -75,134 +82,129 @@ a {
 /* ------    Navbar   ------- */
 
 .navbar {
-    background-color: $secondary-color;
-    padding: 0 65px;
+  background-color: $secondary-color;
+  padding: 0 65px;
 }
 
 .navbar-toggle {
-    border-color: $primary-color;
-    margin-top: 20px;
-    margin-bottom: 21px;
-    .icon-bar {
-        background-color: $primary-color;
-    }
+  border-color: $primary-color;
+  margin-top: 20px;
+  margin-bottom: 21px;
+  .icon-bar {
+    background-color: $primary-color;
+  }
 }
 
 .nav > li > a {
-    padding-top: 30px;
-    padding-bottom: 25px;
-    font-size: 18px;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  font-size: 18px;
+  color: $primary-color;
+  &:hover,
+  &:focus {
     color: $primary-color;
-    &:hover,
-    &:focus {
-        color: $primary-color;
-        background-color: $hover;
-    }
+    background-color: $hover;
+  }
 }
 
 
 /* ------   Header  ------- */
 
 .intro {
+  width: 100%;
+  min-height: 100%;
+  background-image: url(../images/car.png);
+  background-size: cover;
+  &:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 100%;
-    min-height: 100%;
-    background-image: url(../images/car.png);
-    background-size: cover;
-    &:before {
-        content: ' ';
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(50, 50, 50, 0.90);
-    }
-    .content {
-        color: $primary-color;
-        position: relative;
-        padding-top: 200px;
-        font-size: 60px;
-    }
+    height: 100%;
+    background: rgba(50, 50, 50, 0.90);
+  }
+  .content {
+    color: $primary-color;
+    position: relative;
+    padding-top: 100px;
+    font-size: 50px;
+  }
 }
-
 
 /* ------   Features  ------- */
 
 .how-it-works {
-    .row {
-        margin-top: 40px;
-        background-color: $primary-color-light;
-    }
+  .row {
+    margin-top: 40px;
+  }
 }
-
 
 /* ------   CTA  ------- */
 
 .cta {
-    h4 {
-        font-style: italic;
+  h4 {
+    font-style: italic;
+  }
+  .btn {
+    height: 200px;
+    width: 212px;
+    background-color: #A5C542;
+    border: 2px;
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 25px;
+    white-space: normal;
+    &:hover,
+    &:focus {
+      background-color: #87A232;
     }
-    .btn {
-        height: 200px;
-        width: 212px;
-        background-color: #A5C542;
-        border: 2px;
-        border-radius: 3px;     
-        font-size: 16px;
-        padding: 25px;
-        white-space: normal;
-        &:hover, &:focus {
-          background-color: #87A232;
-        }
-    }
+  }
 }
-
 
 /* ------ Footer ------- */
 
 footer {
-    background-color: $secondary-color;
-    color: $primary-color;
-    p {
-        font-size: 12px;
-        margin-top: 12px;
+  background-color: $secondary-color;
+  color: $primary-color;
+  p {
+    font-size: 12px;
+    margin-top: 12px;
+  }
+  .social-links a {
+    color: $secondary-color;
+    background-color: $primary-color;
+    border-radius: 50%;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    padding-top: 7px;
+    margin-left: 10px;
+    &:hover {
+      background-color: $hover;
     }
-    .social-links a {
-        color: $secondary-color;
-        background-color: $primary-color;
-        border-radius: 50%;
-        display: inline-block;
-        width: 35px;
-        height: 35px;
-        text-align: center;
-        padding-top: 7px;
-        margin-left: 10px;
-        &:hover {
-            background-color: $hover;
-        }
-    }
+  }
 }
-
 
 /* ----------  Case Study Page ---------- */
 
 .case-studies {
-    img {
-        width: 100%;
-        margin-top: 15px;
-    }
+  img {
+    width: 100%;
+    margin-top: 15px;
+  }
 }
 
 .modal-dialog {
-    max-width: 400px;
-    margin: 10px auto;
-    @media (min-width: 768px) {
-        width: 400px;
-        margin: 30px auto;
-    }
+  max-width: 400px;
+  margin: 10px auto;
+  @media (min-width: 768px) {
+    width: 400px;
+    margin: 30px auto;
+  }
 }
-
 
 /* ----------  About Us Page ---------- */
 
@@ -210,19 +212,19 @@ footer {
 /* ------ Team ------- */
 
 .team {
-    img {
-        width: 250px;
-    }
-    .longfix {
-        font-size: 23px;
-    }
+  img {
+    width: 250px;
+  }
+  .longfix {
+    font-size: 22px;
+  }
 }
 
 .contact-form {
-    .input-group {
-        margin-bottom: 10px;
-    }
-    button {
-        width: 100%;
-    }
+  .input-group {
+    margin-bottom: 10px;
+  }
+  button {
+    width: 100%;
+  }
 }
