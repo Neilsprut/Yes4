@@ -75,7 +75,7 @@ a {
   }
 }
 
-.acertaBtn {
+.btn-acerta {
   color: $primary-color;
   background-color: $hover;
   border-color: $hover-active;
@@ -197,6 +197,14 @@ footer {
     }
   }
 }
+
+/* ----------  Product Page ----------*/
+
+.advantage-height {
+  height: 1em;
+  position: relative;
+}
+
 
 /* ----------  Case Study Page ---------- */
 
