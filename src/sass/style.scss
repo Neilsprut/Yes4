@@ -75,6 +75,16 @@ a {
   }
 }
 
+.acertaBtn {
+  color: $primary-color;
+  background-color: $hover;
+  border-color: $hover-active;
+  &:focus, &:hover {
+    color: $primary-color;
+    background-color: $hover-active;
+  }
+}
+
 
 /* ----------  Main Page ---------- */
 
