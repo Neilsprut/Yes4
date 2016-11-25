@@ -8,6 +8,21 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    assemble: {
+      options: {
+        layout: "src/layout/default.hbs",
+        partials: "src/partials/*.hbs",
+        flatten: true,
+        prettify: {
+          indent: 2
+        }
+      },
+      pages: {
+        files: {
+          'web/': ['src/pages/*.hbs']
+        }
+      }
+    },
     jshint: {
       files: ['src/js/*.js'],
       options: {
@@ -58,8 +73,10 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', ['jshint', 'sass:minify', 'uglify:minify']);
 
-  grunt.registerTask('dev', ['jshint', 'sass:pretty', 'uglify']);
+  grunt.registerTask('dev', ['assemble', 'jshint', 'sass:pretty', 'uglify']);
 
   grunt.registerTask('css', ['sass:pretty']);
+
+  grunt.registerTask('h', ['assemble']);
 
 };

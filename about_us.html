@@ -131,7 +131,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia dolores voluptas illo libero soluta inventore dicta repellat placeat rem repudiandae iste non ex accusantium, eius reiciendis alias temporibus, necessitatibus! Inventore.</p>
           </div>
           <div class="col-md-3">
-            <form id="gform" class="contact-form" method="POST" action="https://script.google.com/macros/s/AKfycbwQceSRKQOu7G98yl41S96sH9P0E5AuGjhRuzmvXdP9IAFJq-I/exec">
+            <form id="about-form" class="contact-form script-form" method="POST" action="https://script.google.com/macros/s/AKfycbwQceSRKQOu7G98yl41S96sH9P0E5AuGjhRuzmvXdP9IAFJq-I/exec">
               <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-user"></i></span>
                 <input id="first-name" name="first-name" type="text" class="form-control" placeholder="First Name" aria-describedby="first-name" required>
@@ -148,9 +148,10 @@
                 <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
                 <input id="email" name="email" type="email" class="form-control" placeholder="Email Address" aria-describedby="email" required>
               </div>
-              <button id="signup-btn" type="submit" class="btn btn-acerta">
-                Submit
-              </button>
+              <div class="form-msg" role="message">
+                <!--  Result Message goes here -->
+              </div>
+              <button type="submit" class="btn btn-acerta">Submit</button>
             </form>
           </div>
         </div>
