@@ -19,7 +19,7 @@ module.exports = function(grunt) {
       },
       pages: {
         files: {
-          'web/': ['src/pages/*.hbs']
+          './': ['src/pages/*.hbs']
         }
       }
     },
