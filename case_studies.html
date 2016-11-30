@@ -22,7 +22,6 @@
           <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
           <!--Google Fonts Roboto -->
           <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-          <script src="js/modernizr-2.6.1.min.js"></script>
           <!-- Favicons -->
           <link rel="shortcut icon" href="images/favicon.ico">    </head>
     <body>
@@ -56,8 +55,36 @@
             <!-- /.container-fluid -->
           </nav>
         </header>        
-
-	<section class="case-studies">
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">$title</h4>
+            </div>
+            <form id="modal-form" class="script-form" method="POST" action="https://script.google.com/macros/s/AKfycbzgCP38t41IpaYC3bqET1QigLZy9nLJLFDqS2NZz2ReOWHtffk/exec">
+              <div class="modal-body">
+                <p>We'll send the case study to your email address below</p>
+                <div class="form-group">
+                  <input id="email" name="email" type="email" class="form-control" placeholder="Email Address" aria-describedby="email" required>
+                  <input id="title" name="title" type="hidden" value="$title">
+                </div>
+                <div class="form-msg" role="message">
+                  <!--  Result Message goes here -->
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-acerta">Submit Email</button>
+              </div>
+            </form>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->
+  <section class="case-studies">
     <div class="container-fluid">
       <div class="row">
         <div class="text-center col-md-4 col-md-offset-4">
@@ -70,69 +97,62 @@
           </p>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-5 col-md-offset-1">
-          <div class="col-md-5">
-            <img src="images/case_study.jpg">
-          </div>
-          <div class="col-md-7">
-            <h3>Bearing Failure</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sint, a eum in provident veritatis aut, ea, sapiente iure atque ad. Harum illum doloremque doloribus, dolor sunt, aspernatur distinctio iste.</p>
-          </div>
+      <div class="text-center row cases">
+        <div class="col-md-3 col-lg-offset-1 col-lg-2">
+          <img src="images/case_study.jpg">
+        </div>
+        <div class="col-md-3 col-lg-3">
+          <h3>Bearing Failure</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sint, a eum in provident veritatis aut, ea, sapiente iure atque ad. Harum illum doloremque doloribus, dolor sunt, aspernatur distinctio iste.</p>
           <button class="btn btn-acerta" data-toggle="modal" data-target="#myModal">Download Case Study</button>
         </div>
-        <div class="col-md-5">
-          <div class="col-md-5">
-            <img src="images/case_study.jpg">
-          </div>
-          <div class="col-md-7">
-            <h3>Case Study</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sint, a eum in provident veritatis aut, ea, sapiente iure atque ad. Harum illum doloremque doloribus, dolor sunt, aspernatur distinctio iste.</p>
-          </div>
+        <div class="col-md-3 col-lg-2">
+          <img src="images/case_study.jpg">
+        </div>
+        <div class="col-md-3 col-lg-3">
+          <h3>Bearing Failure</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sint, a eum in provident veritatis aut, ea, sapiente iure atque ad. Harum illum doloremque doloribus, dolor sunt, aspernatur distinctio iste.</p>
           <button class="btn btn-acerta" data-toggle="modal" data-target="#myModal">Download Case Study</button>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-5 col-md-offset-1">
-          <div class="col-md-5">
-            <img src="images/case_study.jpg">
-          </div>
-          <div class="col-md-7">
-            <h3>Case Study</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sint, a eum in provident veritatis aut, ea, sapiente iure atque ad. Harum illum doloremque doloribus, dolor sunt, aspernatur distinctio iste.</p>
-          </div>
+      <div class="text-center row cases">
+        <div class="col-md-3 col-lg-offset-1 col-lg-2">
+          <img src="images/case_study.jpg">
+        </div>
+        <div class="col-md-3 col-lg-3">
+          <h3>Bearing Failure</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sint, a eum in provident veritatis aut, ea, sapiente iure atque ad. Harum illum doloremque doloribus, dolor sunt, aspernatur distinctio iste.</p>
           <button class="btn btn-acerta" data-toggle="modal" data-target="#myModal">Download Case Study</button>
         </div>
-        <div class="col-md-5">
-          <div class="col-md-5">
-            <img class="center-block" src="images/case_study.jpg">
-          </div>
-          <div class="col-md-7">
-            <h3>Case Study</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sint, a eum in provident veritatis aut, ea, sapiente iure atque ad. Harum illum doloremque doloribus, dolor sunt, aspernatur distinctio iste.</p>
-          </div>
+        <div class="col-md-3 col-lg-2">
+          <img src="images/case_study.jpg">
+        </div>
+        <div class="col-md-3 col-lg-3">
+          <h3>Bearing Failure</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sint, a eum in provident veritatis aut, ea, sapiente iure atque ad. Harum illum doloremque doloribus, dolor sunt, aspernatur distinctio iste.</p>
           <button class="btn btn-acerta" data-toggle="modal" data-target="#myModal">Download Case Study</button>
         </div>
       </div>
     </div>
   </section>
-            <footer>
-              <div class="row">
-                <div class="col-md-4 col-md-offset-4">
-                  <p>Copyright © 2015 Acerta Systems Analytics Inc. / All rights reserved.</p>
-                </div>
-                <div class="col-md-4 text-right">
-                  <div class="social-links">
-                    <a href="">
-                      <i class="fa fa-linkedin" aria-hidden="true"></i>
-                    </a>
-                    <a href="">
-                      <i class="fa fa-envelope" aria-hidden="true"></i>
-                    </a>
-                  </div>
+          <footer>
+            <div class="row">
+              <div class="text-center col-md-4 col-md-offset-4 col-sm-12">
+                <p>Copyright © 2015 Acerta Systems Analytics Inc.<br> All rights reserved.</p>
+              </div>
+              <div class="text-center col-md-offset-2 col-md-2 col-sm-12">
+                <div class="social-links">
+                  <a href="">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                  </a>
                 </div>
               </div>
-            </footer>      </div>
+            </div>
+          </footer>
+      </div>
       <!-- global wrapper -->
       <!-- End Document -->
         <script>
@@ -157,5 +177,7 @@
         <!-- Bootstrap  -->
         <script src="vendor/bootstrap/dist/js/bootstrap.js"></script>
         <!-- Custom  -->
-        <script type="text/javascript" src="js/style.js"></script>    </body>
+        <script type="text/javascript" src="js/script.js"></script>
+        <!-- <script src="js/modernizr-2.6.1.min.js"></script> -->
+    </body>
 </html>

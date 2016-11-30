@@ -1,11 +1,19 @@
 @import 'theme';
 
+$sm-up: 768px;
+$md-up: 992px;
+$lg-up: 1200px;
+
 /* System-wide edits */
 
 html,
 body,
 #globalWrapper {
   height: 100%;
+}
+
+.center-el{
+  margin: 0 auto;
 }
 
 /* Bootstrap edit */
@@ -91,9 +99,7 @@ a {
   text-align: center;
 }
 
-/* ----------  Main Page ---------- */
-
-/* ------    Navbar   ------- */
+/* ---------    Navbar   --------- */
 
 .navbar {
   background-color: $secondary-color;
@@ -121,6 +127,8 @@ a {
   }
 }
 
+/* ----------  Main Page ---------- */
+
 /* ------   Header  ------- */
 
 .intro {
@@ -142,7 +150,10 @@ a {
     color: $primary-color;
     position: relative;
     padding-top: 100px;
-    font-size: 50px;
+    font-size: 40px;
+    @media (min-width: $md-up) {
+      font-size: 50px;
+    }
   }
 }
 
@@ -152,6 +163,24 @@ a {
   .row {
     margin-top: 40px;
   }
+  img {
+    margin: 15px;
+  }
+}
+
+/* ----- Customers ----- */
+
+.customers {
+  img {
+    width: 400px;
+    margin: 20px;
+    @media (min-width: $md-up) {
+      width: 200px;
+    }
+    @media (min-width: $lg-up) {
+      width: 250px;
+    }
+  }
 }
 
 /* ------   CTA  ------- */
@@ -159,31 +188,6 @@ a {
 .cta {
   h4 {
     font-style: italic;
-  }
-}
-
-/* ------ Footer ------- */
-
-footer {
-  background-color: $secondary-color;
-  color: $primary-color;
-  p {
-    font-size: 12px;
-    margin-top: 12px;
-  }
-  .social-links a {
-    color: $secondary-color;
-    background-color: $primary-color;
-    border-radius: 50%;
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    text-align: center;
-    padding-top: 7px;
-    margin-left: 10px;
-    &:hover {
-      background-color: $hover;
-    }
   }
 }
 
@@ -203,18 +207,33 @@ footer {
 
 .case-studies {
   img {
-    width: 100%;
+    width: 300px;
     margin-top: 15px;
+  }
+  .cases {
+    p {
+      display: inline-block;
+      max-width: 400px;
+    }
+    button {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  @media (min-width: $md-up) {
+    img {
+      max-width: 190px;
+    }
   }
 }
 
 .modal-dialog {
   max-width: 400px;
   margin: 10px auto;
-  @media (min-width: 768px) {
-    width: 400px;
-    margin: 30px auto;
-  }
+  // @media (min-width: $sm-up) {
+  //   width: 400px;
+  //   margin: 30px auto;
+  // }
 }
 
 /* ----------  About Us Page ---------- */
@@ -223,9 +242,16 @@ footer {
 /* ------ Team ------- */
 
 .team {
+  .col-md-3 {
+    display: block;
+    @media (min-width: $md-up) {
+      display: inline-block;
+    }
+  }
   img {
     width: 100%;
     border-radius: 50%;
+    max-width: 325px;
   }
   h3 {
     height: 2em;
@@ -238,11 +264,48 @@ footer {
   }
 }
 
-.contact-form {
+.contact-us {
+  p, form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+#about-form {
   .input-group {
     margin-top: 10px;
   }
   button {
     width: 100%;
+  }
+}
+
+/* -------- Footer ---------- */
+
+footer {
+  background-color: $secondary-color;
+  color: $primary-color;
+  p {
+    font-size: 12px;
+    // margin-top: 12px;
+  }
+  .social-links {
+    @media (min-width: $md-up) {
+      text-align: right;
+    }
+    a {
+      color: $secondary-color;
+      background-color: $primary-color;
+      border-radius: 50%;
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      text-align: center;
+      padding-top: 7px;
+      margin-left: 10px;
+      &:hover {
+        background-color: $hover;
+      }
+    }
   }
 }
