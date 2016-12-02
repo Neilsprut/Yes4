@@ -193,13 +193,35 @@ a {
 
 /* ----------  Product Page ----------*/
 
+.product_intro {
+  .product_intro_image {
+  width: 100%;
+  background-image: url(../images/anomaly-2.jpg);
+  background-size: cover;
+  }
+  .row {
+    padding: 30px 0px;
+  }
+}
+
 .advantages {
-  h3 {
-    height: 2em;
+  .row {
+    padding: 0px;
   }
-  h4 {
-    height: 4.5em;
+  .col-md-6 {
+  max-width: 100%;
+  background-color: $primary-color;
   }
+  .product_image {
+  display: block;
+  padding: 20px 0px;
+  margin-right: auto;
+  margin-left: auto;
+  }
+}
+
+.product {
+  padding: 50px 0px 0px 0px;
 }
 
 
