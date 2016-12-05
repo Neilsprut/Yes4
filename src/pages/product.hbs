@@ -1,81 +1,89 @@
 ---
 title: product
 ---
+    <section class="product-img">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-offset-2 col-md-8">
+            <div class="caption">a·nom·a·ly</div>
+            <h3>noun</h3>
+            <h2>something that deviates from what is standard, normal, or expected.</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product-intro">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h1>Detect more anomalies and understand their root cause</h1>
+            <p>Anomalies can go unnoticed in your vehicles, causing many problems in the future.</p>
+            <p>Detecting an anomaly late causes massive product recalls, safety concerns, damage to the brand, and ultimately huge costs to your organization.</p>
+            <p>Acerta helps quickly diagnose anomalies to discover critical problems in your vehicles through our dynamic machine learning platform. This leads to faster diagnostic times and increased quality.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="advantages">
+      <div class="container-fluid text-center">
+      <div class="row">
+        <div class="col-md-6 advantage-item">
+          <img src="images/advantage1.svg">
+          <h2>Real Time</h2>
+          <p>Analyze signal data as it gets collected to understand vehicle health</p>
+        </div>
+        <div class="col-md-6 advantage-item">
+          <img src="images/advantage2.svg">
+          <h2>Dynamic</h2>
+          <p>Analyze data from any vehicle model using the same platform</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 advantage-item">
+          <img src="images/advantage3.svg">
+          <h2>Scalable</h2>
+          <p>Support the growing electrical complexity of modern vehicles</p>
+        </div>
+        <div class="col-md-6 advantage-item">
+          <img src="images/advantage4.svg">
+          <h2>Flexible</h2>
+          <p>We integrate with your existing data collection infrastructure with no additional hardware needed.</p>
+        </div>
+      </div>
+      </div>
+    </section>
 
-  <section class="product_intro">
-    <img class="product_intro_image" src="images/anomaly-2.jpg">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-          <h2>Detect more anomalies and understand their root cause</h2>
-          <p>Anomalies can go unnoticed in your vehicles, causing many problems in the future.
-          Detecting an anomaly late causes massive product recalls, safety concerns, damage to the brand, and
-          ultimately huge costs to your organization.
-          Acerta helps quickly diagnose anomalies to discover critical problems in your vehicles through our
-          dynamic machine learning platform. This leads to faster diagnostic times and increased quality.</p>
+    {{#parseJSON '{
+      "text": "Check out our case studies",
+      "link": "case_studies.html",
+      "btn-text": "See Case Studies"
+    }'}}
+      {{> cta }}
+    {{/parseJSON}}
+
+    <section class="industry">
+      <div class="container-fluid text-center">
+        <div class="col-md-5 col-md-offset-1">
+          <h1>For Automotive Manufacturers</h1>
+          <img src="images/automotive.jpg" alt="">
+          <h2>Automatic Analysis</h2>
+          <p>Assess vehicle condition automatically during testing and assembly to improve your diagnostic capabilities</p>
+          <h2>Faster Diagnostics</h2>
+          <p>Perform analysis of vehicle data in minutes and avoid the tedious hours of manual inspection</p>
+          <h2>Deep Exploration</h2>
+          <p>Discover previously overlooked anomalies by continuously analyzing data from every newly manufactured vehicle</p>
+        </div>
+        <div class="col-md-5">
+          <h1>For Fleet Manufacturers</h1>
+          <img src="images/fleet.jpg" alt="">
+          <h2>Vehicle Health Status</h2>
+          <p>Evaluate the health of the vehicle, identify developing problems, and help zero in on the cause</p>
+          <h2>Optimized Maintenance</h2>
+          <p>Schedule maintenance based on vehicle performance and health levels to reduce costs by up to 40%</p>
+          <h2>Reduce Downtime</h2>
+          <p>Avoid unexpected breakdowns that result in large repair and downtime costs for vehicle fleets</p>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="advantages">
-    <div class="container-fluid text-center">
-    <div class="row advantages_row">
-      <div class="col-md-6">
-        <img class="product_image" src="images/real-time_black.svg">
-        <h4>Real Time</h4>
-        <h4>Analyze signal data as it gets collected to understand vehicle health</h4>
-      </div>
-      <div class="col-md-6">
-        <img class="product_image" src="images/dynamic_black.svg">
-        <h4>Dynamic</h4>
-        <h4>Analyze data from any vehicle model using the same platform</h4>
-      </div>
-    </div>
-    <div class="row advantages_row">
-      <div class="col-md-6">
-        <img class="product_image" src="images/scalable_black.svg">
-        <h4>Scalable</h4>
-        <h4>Support the growing electrical complexity of modern vehicles</h4>
-      </div>
-      <div class="col-md-6">
-        <img class="product_image" src="images/flexible_black.svg">
-        <h4>Flexible</h4>
-        <h4>We integrate with your existing data collection infrastructure with no additional hardware needed.</h4>
-      </div>
-    </div>
-    </div>
-  </section>
-  <section class="product">
-    <div class="container-fluid">
-      <div class="col-md-5 col-md-offset-1">
-        <h2>For Automotive Manufacturers</h2>
-        <h3>Automatic Analysis</h3>
-        <p>Assess vehicle condition automatically during testing and assembly to improve your diagnostic capabilities</p>
-        <h3>Faster Diagnostics</h3>
-        <p>Perform analysis of vehicle data in minutes and avoid the tedious hours of manual inspection</p>
-        <h3>Deep Exploration</h3>
-        <p>Discover previously overlooked anomalies by continuously analyzing data from every newly manufactured vehicle</p>
-      </div>
-      <div class="col-md-5"></div>
-        <h2>For Fleet Manufacturers</h2>
-        <h3>Vehicle Health Status</h3>
-        <p>Evaluate the health of the vehicle, identify developing problems, and help zero in on the cause</p>
-        <h3>Optimized Maintenance</h3>
-        <p>Schedule maintenance based on vehicle performance and health levels to reduce costs by up to 40%</p>
-        <h3>Reduce Downtime</h3>
-        <p>Avoid unexpected breakdowns that result in large repair and downtime costs for vehicle fleets</p>
-    </div>
-  </section>
-  <section class="demo_link">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-6 col-md-offset-3 text-center">
-          <h3>Contact us today for a demo!</h3>
-          <a href="product.html" class="btn btn-acerta">
-          Request Demo
-          </a>
-          <h2>Acerta is commited to helping companies better utilize their vehicle data.</h2>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
+
+    {{> demo }}

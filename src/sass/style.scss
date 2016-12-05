@@ -41,38 +41,53 @@ body,
 
 body {
   padding-top: 75px;
+  color: $secondary-color;
   background-color: $primary-color;
   font-family: "Roboto", sans-serif;
+  line-height: 1.7em;
+  letter-spacing: 1px;
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-weight: bold;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 32px;
+  @media (min-width: $sm-up){
+    font-size: 40px;
+  }
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 22px;
+  @media (min-width: $sm-up){
+    font-size: 30px;
+  }
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 20px;
+  @media (min-width: $sm-up){
+    font-size: 24px;
+  }
 }
 
 h4 {
-  font-size: 20px;
-}
-
-h5 {
-  font-size: 16px;
+  font-size: 18px;
+  @media (min-width: $sm-up){
+    font-size: 20px;
+  }
 }
 
 p {
-  font-size: 15px;
+  font-size: 16px;
+  @media (min-width: $sm-up){
+    font-size: 18px;
+  }
 }
 
 a {
@@ -91,12 +106,36 @@ a {
     color: $primary-color;
     background-color: $hover-active;
   }
+  &.submitted {
+    opacity: 1;
+    background-color: $hover-active;
+  }
 }
 
 .form-msg {
   padding: 5px;
   margin: 5px;
   text-align: center;
+}
+
+section {
+  padding: 30px 0px;
+}
+
+/* ---------    CTA banner   --------- */
+
+.cta {
+  color: $primary-color;
+  width: 100%;
+  background-image: url(../images/cta-bg.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+/* ---------   Slogan  --------- */
+
+.slogan {
+  font-style: italic;
 }
 
 /* ---------    Navbar   --------- */
@@ -129,13 +168,14 @@ a {
 
 /* ----------  Main Page ---------- */
 
-/* ------   Header  ------- */
+/* ------   Intro Picture  ------- */
 
-.intro {
+.intro-banner {
   width: 100%;
   height: 450px;
-  background-image: url(../images/car.png);
+  background-image: url(../images/car.jpg);
   background-size: cover;
+  background-position: center center;
   &:before {
     content: ' ';
     display: block;
@@ -149,22 +189,29 @@ a {
   .content {
     color: $primary-color;
     position: relative;
-    padding-top: 100px;
-    font-size: 40px;
-    @media (min-width: $md-up) {
+    padding-top: 50px;
+    @media (min-width: $sm-up) {
       font-size: 50px;
     }
   }
 }
 
-/* ------   Features  ------- */
+/* ----- How it works ----- */
 
 .how-it-works {
-  .row {
-    margin-top: 40px;
+  background-color: $primary-color-dark;
+  li {
+    font-size: 30px;
+    max-width: 400px;
+    margin: 0 auto;
   }
-  img {
-    margin: 15px;
+  .diagram {
+    background-image: url(../images/diagram.png);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    padding-bottom: 60%;
+    margin: 30px;
   }
 }
 
@@ -183,69 +230,67 @@ a {
   }
 }
 
-/* ------   CTA  ------- */
+/* ----------  Product Page ----------*/
 
-.cta {
-  h4 {
+.product-img {
+  background-image: url(../images/product-bg.png);
+  background-size: cover;
+  width: 100%;
+  .row {
+    color: $primary-color;
+    padding: 5%;
+  }
+  .caption {
+    font-size: 60px;
+    letter-spacing: 3px;
+  }
+  h2, h3 {
+    font-weight: lighter;
     font-style: italic;
   }
 }
 
-/* ----------  Product Page ----------*/
-
-.product_intro {
-  .product_intro_image {
-  width: 100%;
-  background-image: url(../images/anomaly-2.jpg);
-  background-size: cover;
-  }
-  .row {
-    padding: 30px 0px;
-  }
-}
-
 .advantages {
-  .row {
-    padding: 0px;
+  background-color: $primary-color-dark;
+  .advantage-item {
+    padding: 50px 0px;
   }
-  .col-md-6 {
-  max-width: 100%;
-  background-color: $primary-color;
-  }
-  .product_image {
-  display: block;
-  padding: 20px 0px;
-  margin-right: auto;
-  margin-left: auto;
+  p {
+    max-width: 400px;
+    margin: 0 auto;
+    // margin-bottom: 50px;
   }
 }
 
-.product {
-  padding: 50px 0px 0px 0px;
+.industry {
+  img {
+    max-width: 400px;
+  }
+  p {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
 }
 
 
 /* ----------  Case Study Page ---------- */
 
 .case-studies {
+  padding: 0px;
+  .container-fluid, .row, .bg {
+    padding: 0px;
+  }
+  .item {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
   img {
-    width: 300px;
-    margin-top: 15px;
+    width: 100%;
   }
-  .cases {
-    p {
-      display: inline-block;
-      max-width: 400px;
-    }
-    button {
-      display: block;
-      margin: 0 auto;
-    }
-  }
-  @media (min-width: $md-up) {
-    img {
-      max-width: 190px;
-    }
+  p {
+    max-width: 400px;
+    margin: 0 auto 20px auto;
   }
 }
 
@@ -300,6 +345,11 @@ a {
   button {
     width: 100%;
   }
+  textarea {
+    width: 100%;
+    height: 111%;
+    border-color: rgb(204, 204, 204);
+  }
 }
 
 /* -------- Footer ---------- */
@@ -312,6 +362,7 @@ footer {
     // margin-top: 12px;
   }
   .social-links {
+    margin-top: 10px;
     @media (min-width: $md-up) {
       text-align: right;
     }

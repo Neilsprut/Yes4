@@ -17,11 +17,18 @@ module.exports = function(grunt) {
           indent: 2
         }
       },
+      // about: {
+      //   options: { layout: 'src/layout/about-layout.hbs' },
+      //   files: {
+      //     './': ['src/pages/about.hbs']
+      //   }
+      // },
       pages: {
         files: {
           './': ['src/pages/*.hbs']
         }
       }
+
     },
     jshint: {
       files: ['src/js/*.js'],

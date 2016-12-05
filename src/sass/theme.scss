@@ -1,7 +1,6 @@
 /* Primary */
 $primary-color: rgba(255, 250, 245, 1) !default;
-$primary-color-light: lighten($primary-color, 10%);
-$primary-color-dark: darken($primary-color, 10%);
+$primary-color-dark: rgba(242, 242, 242, 1);
 
 /* Secondary */
 $secondary-color: rgba(0, 38, 38, 1) !default;

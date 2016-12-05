@@ -4,11 +4,11 @@ $(document).ready(function() {
   //Show Case study title on modal open
   $('#myModal').on('show.bs.modal', function(event) {
     var button = $(event.relatedTarget); // Button that triggered the modal
-    var title = button.prev().children(":first").text();
+    var title = button.parent().children(":first").text();
     console.log("this is the title - " + title);
     var modal = $(this);
     modal.find('.modal-title').text(title);
-    modal.find('input#title').val(title + " - Case Study");
+    modal.find('input#title').val(title);
   });
 
   var errorIcon = '<span><i class="fa fa-exclamation-circle" aria-hidden="true"></i><span>';
@@ -16,6 +16,7 @@ $(document).ready(function() {
   //Write form confirmation message
   function formResult($form, success) {
     var formMsg = $form.find(".form-msg");
+    var formBtn = $form.find(".btn-acerta");
     var formType = $form.attr('id');
     if (success){
       if (formType == "modal-form") {
@@ -28,6 +29,8 @@ $(document).ready(function() {
           console.log("Who submitted a form?");
           console.log("Form type is " + formType);
         }
+      formBtn[0].disabled = true;
+      formBtn.addClass("submitted").text("Success");
       formMsg.addClass("active");
     }
     else {
@@ -48,7 +51,7 @@ $(document).ready(function() {
     var $form = $(this);
     var formUrl = $form.attr('action');
     resetMsg($form.find(".form-msg"));
-    formUrl = "";
+    // formUrl = "";
     $.ajax({
       url: formUrl,
       type: 'POST',
@@ -64,6 +67,15 @@ $(document).ready(function() {
       }
     });
   });
+
+ //  // Start of Async HubSpot Analytics Code
+ //    (function(d,s,i,r) {
+ //      if (d.getElementById(i)){return;}
+ //      var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+ //      n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/1981873.js';
+ //      e.parentNode.insertBefore(n, e);
+ //    })(document,"script","hs-analytics",300000);
+ // // End of Async HubSpot Analytics Code
 
 });
 

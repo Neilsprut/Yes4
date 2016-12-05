@@ -1,7 +1,7 @@
 ---
 title: index
 ---
-    <section class="intro">
+    <section class="intro-banner">
       <div class="container-fluid">
         <div class="row text-center">
           <div class="col-md-6 col-md-offset-3">
@@ -10,23 +10,62 @@ title: index
         </div>
       </div>
     </section>
+    <section class="main-intro">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-2 col-md-offset-2 text-center">
+          <h1>What do we do?</h1>
+          </div>
+          <div class="col-md-7">
+            <p>Acerta helps companies better understand their vehicle data by reducing the resources needed to detect faults and find the root cause of these faults.</p>
+            <p>Companies are already collecting massive amounts of data, our continuous analysis of this vehicle data will provide valuable insights into vehicle performance, health and maintenance.</p>
+            <p>Acerta unlocks the hidden value in vehicle data.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {{#parseJSON '{
+      "text": "See how Acerta saves you money and time!",
+      "link": "product.html",
+      "btn-text": "Learn More"
+    }'}}
+      {{> cta }}
+    {{/parseJSON}}
+
     <section class="how-it-works">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-2 col-md-offset-2"><img src="images/Acerta_black.png" alt=""></div>
-          <div class="col-md-7">
-            <p>Acerta helps companies better understand their vehicle data by reducing the effort and resources needed to detect faults and to find the root cause of these failures. As massive amounts of data is already being collected by companies, continuous analysis of system behavior will help produce valuable insights, increase productivity, and predict problems before they reach the customer. Whether through warranty-based recall prevention, increased manufacturing-line uptime, or predicting failure on the road, Acerta unlocks the value hidden in vehicle data.
-            </p>
+          <div class="col-md-offset-3 col-md-6 text-center">
+            <h1>How it works</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-offset-1 col-md-5">
+            <ol>
+              <li>
+                <h2>Accquire</h2>
+                <p>Send your vehicle data to our secure private cloud using your existing data collection setup</p>
+              </li>
+              <li>
+                <h2>Analyze</h2>
+                <p>Our machine learning platform analyzes the data looking for unusual anomalies and problems</p>
+              </li>
+              <li>
+                <h2>Alert</h2>
+                <p>Be alerted in real-time when problems are detected to take immediate action</p>
+              </li>
+            </ol>
+
+          </div>
+          <div class="col-md-6">
+            <div class="diagram"></div>
           </div>
         </div>
       </div>
     </section>
     <section class="customers">
       <div class="container-fluid">
-        <div class="row">
-          <div class="text-center col-md-6 col-md-offset-3">
-            <h2>Used by</h2></div>
-        </div>
         <div class="text-center row">
           <div class="col-md-3"><img src="images/company1.png" alt=""></div>
           <div class="col-md-3"><img src="images/company2.png" alt=""></div>
@@ -35,23 +74,5 @@ title: index
         </div>
       </div>
     </section>
-    <section class="cta">
-      <div class="container-fluid">
-        <div class="row text-center">
-          <h4>Acerta is committed to helping companies better utilize their vehicle data.</h4></div>
-        <div class="row">
-          <div class="col-md-2 col-md-offset-3 text-center">
-            <h3>See how Acerta saves you money and time!</h3>
-            <a href="product.html" class="btn btn-acerta">
-            Go to Product Page
-          </a>
-          </div>
-          <div class="col-md-2 col-md-offset-2 text-center">
-            <h3>Contact us today for a demo!</h3>
-            <a href="about.html" class="btn btn-acerta center-block">
-            Go to Contact Form
-          </a>
-          </div>
-        </div>
-      </div>
-    </section>
+
+    {{> demo }}
