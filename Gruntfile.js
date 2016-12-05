@@ -52,36 +52,32 @@ module.exports = function(grunt) {
       }
     },
     uglify: {
-      options: {
-        mangle: false,
-        beautify: {
-          width: 80,
-          beautify: true
+      minify: {
+        options: {},
+        files: {
+          'js/script.js': ['src/js/*.js'],
+          'js/lib.min.js': ['vendor/vendor-js/jquery.js', 'vendor/vendor-js/*.js'],
         }
       },
-      my_target: {
+      pretty: {
+        options: {
+          mangle: false,
+          beautify: {
+            width: 80,
+            beautify: true
+          }
+        },
         files: {
-          'js/script.js': ['src/js/*.js']
+          'js/script.js': ['src/js/*.js'],
+          'js/lib.min.js': ['vendor/vendor-js/jquery.js', 'vendor/vendor-js/*.js'],
         }
       }
-    },
-    purifycss: {
-      options: {},
-      target: {
-        src: ['./index.html', 'vendor/js/*.js'],
-        css: ['vendor/css/*.css'],
-        dest: 'css/lib.min.css'
-      },
     }
-    // watch: {
-    //   files: ['<%= jshint.files %>'],
-    //   tasks: ['jshint']
-    // }
   });
 
-  grunt.registerTask('default', ['assemble', 'jshint', 'sass:minify', 'uglify:minify', 'purifycss']);
+  grunt.registerTask('default', ['assemble', 'jshint', 'sass:minify', 'uglify:minify']);
 
-  grunt.registerTask('dev', ['assemble', 'jshint', 'sass:pretty', 'uglify', 'purifycss']);
+  grunt.registerTask('dev', ['assemble', 'jshint', 'sass:pretty', 'uglify:pretty']);
 
   grunt.registerTask('css', ['sass:pretty']);
 
