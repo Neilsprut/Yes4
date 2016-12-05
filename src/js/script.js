@@ -11,6 +11,14 @@ $(document).ready(function() {
     modal.find('input#title').val(title);
   });
 
+  $('#myModal').on('hide.bs.modal', function() {
+    var modal = $(this);
+    modal.find(".btn-acerta")[0].disabled = false;
+    modal.find(".btn-acerta").removeClass("submitted").text("Submit Email");
+    modal.find('input#email').val("");
+    modal.find(".form-msg").removeClass("active");
+  });
+
   var errorIcon = '<span><i class="fa fa-exclamation-circle" aria-hidden="true"></i><span>';
 
   //Write form confirmation message
@@ -35,8 +43,8 @@ $(document).ready(function() {
     }
     else {
       formMsg.addClass('alert-danger');
-      formMsg.append(errorIcon).append("<span>&nbsp;There seems to be a problem. Please try again later.</span><br>");
-      formMsg.addClass("active");
+      formMsg.append(errorIcon).append('<span>&nbsp;There seems to be a problem. Please try again later.</span><br>');
+      formMsg.addClass('active');
     }
   }
 

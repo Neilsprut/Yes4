@@ -64,6 +64,14 @@ module.exports = function(grunt) {
           'js/script.js': ['src/js/*.js']
         }
       }
+    },
+    purifycss: {
+      options: {},
+      target: {
+        src: ['./index.html', 'js/*.js'],
+        css: ['css/*.css'],
+        dest: 'css/purestyles.css'
+      },
     }
     // watch: {
     //   files: ['<%= jshint.files %>'],
@@ -71,9 +79,9 @@ module.exports = function(grunt) {
     // }
   });
 
-  grunt.registerTask('default', ['jshint', 'sass:minify', 'uglify:minify']);
+  grunt.registerTask('default', ['assemble', 'jshint', 'sass:minify', 'uglify:minify']);
 
-  grunt.registerTask('dev', ['assemble', 'jshint', 'sass:pretty', 'uglify']);
+  grunt.registerTask('dev', ['assemble', 'jshint', 'sass:pretty', 'uglify', 'purifycss']);
 
   grunt.registerTask('css', ['sass:pretty']);
 

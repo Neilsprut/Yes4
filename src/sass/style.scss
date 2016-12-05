@@ -116,6 +116,10 @@ a {
   padding: 5px;
   margin: 5px;
   text-align: center;
+  display: none;
+  &.active {
+    display: block;
+  }
 }
 
 section {
@@ -263,8 +267,12 @@ section {
 }
 
 .industry {
+  h1 {
+    height: 2em;
+  }
   img {
     max-width: 400px;
+    padding: 10px;
   }
   p {
     max-width: 400px;
@@ -334,7 +342,7 @@ section {
 .contact-us {
   p, form {
     max-width: 500px;
-    margin: 0 auto;
+    margin: 10px auto;
   }
 }
 
@@ -343,6 +351,7 @@ section {
     margin-top: 10px;
   }
   button {
+    margin-top: 10px;
     width: 100%;
   }
   textarea {
