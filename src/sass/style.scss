@@ -29,9 +29,12 @@ body,
 }
 
 .row {
-  padding: 10px 50px;
+  padding: 10px 0px;
   margin-right: 0px;
   margin-left: 0px;
+  @media (min-width: $sm-up) {
+    padding: 10px 50px;
+  }
 }
 
 /* ---------- General Edits ----------*/
@@ -53,6 +56,7 @@ h2,
 h3,
 h4 {
   font-weight: bold;
+  color: $hyper;
 }
 
 h1 {
@@ -63,7 +67,7 @@ h1 {
 }
 
 h2 {
-  font-size: 22px;
+  font-size: 24px;
   @media (min-width: $sm-up){
     font-size: 30px;
   }
@@ -98,7 +102,7 @@ a {
 }
 
 .btn-acerta {
-  font-size: 16px;
+  font-size: 18px;
   color: $primary-color;
   background-color: $hover;
   border: 2px solid $hover-active;
@@ -146,7 +150,9 @@ section {
 
 .navbar {
   background-color: $secondary-color;
-  padding: 0 65px;
+  @media (min-width: $sm-up) {
+    padding: 0 65px;
+  }
 }
 
 .navbar-toggle {
@@ -168,6 +174,10 @@ section {
     color: $primary-color;
     background-color: $hover;
   }
+}
+
+.navbar-brand>img {
+  height: 50px;
 }
 
 /* ----------  Main Page ---------- */
@@ -194,6 +204,7 @@ section {
     color: $primary-color;
     position: relative;
     padding-top: 50px;
+    letter-spacing: 2px;
     @media (min-width: $sm-up) {
       font-size: 50px;
     }
@@ -215,16 +226,22 @@ section {
     background-position: center center;
     width: 100%;
     padding-bottom: 60%;
-    margin: 30px;
+    @media (min-width: $sm-up) {
+      margin: 30px;
+    }
   }
 }
 
 /* ----- Customers ----- */
 
 .customers {
+  .img-wrapper {
+    height: 10em;
+    line-height: 10em;
+  }
   img {
-    width: 400px;
-    margin: 20px;
+    width: 100%;
+    margin: 20px 0px;
     @media (min-width: $md-up) {
       width: 200px;
     }
@@ -245,7 +262,10 @@ section {
     padding: 5%;
   }
   .caption {
-    font-size: 60px;
+    font-size: 50px;
+    @media (min-width: $sm-up) {
+      font-size: 60px;
+    }
     letter-spacing: 3px;
   }
   h2, h3 {
@@ -262,7 +282,6 @@ section {
   p {
     max-width: 400px;
     margin: 0 auto;
-    // margin-bottom: 50px;
   }
 }
 
@@ -271,12 +290,18 @@ section {
     height: 2em;
   }
   img {
-    max-width: 400px;
+    max-width: 100%;
+    @media (min-width: $sm-up) {
+      max-width: 400px;
+    }
     padding: 10px;
   }
   p {
-    max-width: 400px;
+    max-width: 300px;
     margin: 0 auto;
+    @media (min-width: $sm-up) {
+      max-width: 400px;
+    }
   }
 
 }
@@ -319,6 +344,7 @@ section {
 .team {
   .col-md-3 {
     display: block;
+    vertical-align: top;
     @media (min-width: $md-up) {
       display: inline-block;
     }
