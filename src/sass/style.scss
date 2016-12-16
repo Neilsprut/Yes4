@@ -56,10 +56,10 @@ h2,
 h3,
 h4 {
   font-weight: bold;
-  color: $hyper;
 }
 
 h1 {
+  color: $secondary-color-light;
   font-size: 32px;
   @media (min-width: $sm-up){
     font-size: 40px;
@@ -88,11 +88,18 @@ h4 {
 }
 
 p {
+  color: $secondary-color-lightest;
   font-size: 16px;
   @media (min-width: $sm-up){
     font-size: 18px;
   }
 }
+
+// Keep main paragraphs black color
+[class*="intro"] p {
+  color:$secondary-color;
+}
+
 
 a {
   color: $hyper;
@@ -130,22 +137,6 @@ section {
   padding: 30px 0px;
 }
 
-/* ---------    CTA banner   --------- */
-
-.cta {
-  color: $primary-color;
-  width: 100%;
-  background-image: url(../images/cta-bg.png);
-  background-size: cover;
-  background-position: center center;
-}
-
-/* ---------   Slogan  --------- */
-
-.slogan {
-  font-style: italic;
-}
-
 /* ---------    Navbar   --------- */
 
 .navbar {
@@ -180,6 +171,22 @@ section {
   height: 50px;
 }
 
+/* ---------    CTA banner   --------- */
+
+.cta {
+  color: $primary-color;
+  width: 100%;
+  background-image: url(../images/cta-bg.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+/* ---------   Slogan  --------- */
+
+.slogan {
+  font-style: italic;
+}
+
 /* ----------  Main Page ---------- */
 
 /* ------   Intro Picture  ------- */
@@ -205,8 +212,11 @@ section {
     position: relative;
     padding-top: 50px;
     letter-spacing: 2px;
+    max-width: 340px;
+    margin: 0 auto;
     @media (min-width: $sm-up) {
       font-size: 50px;
+      max-width: 550px;
     }
   }
 }
@@ -236,11 +246,12 @@ section {
 
 .customers {
   .img-wrapper {
-    height: 10em;
+    min-height: 10em;
     line-height: 10em;
   }
   img {
     width: 100%;
+    max-width: 600px;
     margin: 20px 0px;
     @media (min-width: $md-up) {
       width: 200px;
@@ -303,7 +314,9 @@ section {
       max-width: 400px;
     }
   }
-
+  .row,[class*="col-"] {
+    padding: 0px;
+  }
 }
 
 
@@ -359,6 +372,7 @@ section {
   }
   h4 {
     height: 2em;
+    color: $secondary-color-lightest;
   }
   .longfix {
     font-size: 22px;
@@ -384,6 +398,7 @@ section {
     width: 100%;
     height: 111%;
     border-color: rgb(204, 204, 204);
+    padding: 2px 12px;
   }
 }
 
@@ -394,6 +409,7 @@ footer {
   color: $primary-color;
   p {
     font-size: 12px;
+    color: $primary-color;
     // margin-top: 12px;
   }
   .social-links {

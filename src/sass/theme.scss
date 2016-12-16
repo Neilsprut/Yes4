@@ -5,7 +5,7 @@ $primary-color-dark: rgba(242, 242, 242, 1);
 /* Secondary */
 $secondary-color: rgba(0, 38, 38, 1) !default;
 $secondary-color-light: lighten($secondary-color, 10%);
-$secondary-color-dark: darken($secondary-color, 10%);
+$secondary-color-lightest: rgba(90, 100, 100, 1);;
 
 /* Hover */
 $hover: rgba(166, 200, 66, 1);
