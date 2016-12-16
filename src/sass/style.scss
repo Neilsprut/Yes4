@@ -317,6 +317,11 @@ section {
   .row,[class*="col-"] {
     padding: 0px;
   }
+  .automotive {
+    @media (min-width: $md-up) {
+      border-right: 2px solid $secondary-color;
+    }
+  }
 }
 
 
