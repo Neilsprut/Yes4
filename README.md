@@ -4,12 +4,14 @@ Acerta.github.io
 ## Description
 
 The company website for Acerta.ca
+
 Acerta is a dynamic machine learning platform for detecting anomalies and predicting vehicle failures.
 
 
 ## Prerequisites for build
 
 Node, npm, grunt, sass
+
 Install the grunt cli globally
 
 ```
