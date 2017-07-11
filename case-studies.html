@@ -59,35 +59,6 @@
           <!-- /.container-fluid -->
         </nav>
       </header>      
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">$title</h4>
-              </div>
-              <form id="modal-form" class="script-form" method="POST" action="https://script.google.com/macros/s/AKfycbzgCP38t41IpaYC3bqET1QigLZy9nLJLFDqS2NZz2ReOWHtffk/exec">
-                <div class="modal-body">
-                  <p>We'll send the case study to your email address below</p>
-                  <div class="form-group">
-                    <input id="email" name="email" type="email" class="form-control" placeholder="Email Address" aria-describedby="email" required>
-                    <input id="title" name="title" type="hidden" value="$title">
-                  </div>
-                  <div class="form-msg">
-                    <!--  Result Message goes here -->
-                  </div>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn" data-dismiss="modal">Close</button>
-                  <button type="submit" class="btn btn-acerta">Submit Email</button>
-                </div>
-              </form>
-            </div>
-            <!-- /.modal-content -->
-          </div>
-          <!-- /.modal-dialog -->
-        </div>
-        <!-- /.modal -->
     <section class="case-studies-intro">
       <div class="container-fluid">
         <div class="row">
@@ -113,17 +84,18 @@
           <div class="col-md-4 item">
             <h2>Engine Misfire</h2>
             <p>Acerta accurately diagnosed the specific conditions required for engine misfires and highlighted their occurences.</p>
-            <button class="btn btn-acerta" data-toggle="modal" data-target="#myModal">Request Case Study</button>
+            <a href="files/Acerta - Misfires Case Study.pdf" class="btn btn-acerta" target="_blank">Download Case Study</a>
           </div>
         </div>
+
         <div class="row">
-          <div class="col-md-7 col-md-push-5 bg">
+          <div class="col-md-7 bg col-md-push-5">
             <img src="images/bearing.jpg" alt="">
           </div>
-          <div class="col-md-pull-6 col-md-4 item">
+          <div class="col-md-4 item col-md-pull-6">
             <h2>Bearing Failure</h2>
             <p>Acerta predicts when bearings will fail and provides recommendation of when replacements should be made.</p>
-            <button class="btn btn-acerta" data-toggle="modal" data-target="#myModal">Request Case Study</button>
+            <a href="files/Acerta - Bearing Case Study.pdf" class="btn btn-acerta" target="_blank">Download Case Study</a>
           </div>
         </div>
         <div class="row">
@@ -133,7 +105,7 @@
           <div class="col-md-4 item">
             <h2>Oxygen Leak</h2>
             <p>Acerta automatically identified all air leaks in the dataset of an exhaust system that had lead to excessive fuel consumption.</p>
-            <button class="btn btn-acerta" data-toggle="modal" data-target="#myModal">Request Case Study</button>
+            <a href="files/Acerta - Oxygen Leak Case Study.pdf" class="btn btn-acerta" target="_blank">Download Case Study</a>
           </div>
         </div>
       </div>

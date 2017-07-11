@@ -2,22 +2,22 @@
 
 $(document).ready(function() {
   //Show Case study title on modal open
-  $('#myModal').on('show.bs.modal', function(event) {
-    var button = $(event.relatedTarget); // Button that triggered the modal
-    var title = button.parent().children(":first").text();
-    console.log("this is the title - " + title);
-    var modal = $(this);
-    modal.find('.modal-title').text(title);
-    modal.find('input#title').val(title);
-  });
+  // $('#myModal').on('show.bs.modal', function(event) {
+  //   var button = $(event.relatedTarget); // Button that triggered the modal
+  //   var title = button.parent().children(":first").text();
+  //   console.log("this is the title - " + title);
+  //   var modal = $(this);
+  //   modal.find('.modal-title').text(title);
+  //   modal.find('input#title').val(title);
+  // });
 
-  $('#myModal').on('hide.bs.modal', function() {
-    var modal = $(this);
-    modal.find(".btn-acerta")[0].disabled = false;
-    modal.find(".btn-acerta").removeClass("submitted").text("Submit Email");
-    modal.find('input#email').val("");
-    modal.find(".form-msg").removeClass("active");
-  });
+  // $('#myModal').on('hide.bs.modal', function() {
+  //   var modal = $(this);
+  //   modal.find(".btn-acerta")[0].disabled = false;
+  //   modal.find(".btn-acerta").removeClass("submitted").text("Submit Email");
+  //   modal.find('input#email').val("");
+  //   modal.find(".form-msg").removeClass("active");
+  // });
 
   var errorIcon = '<span><i class="fa fa-exclamation-circle" aria-hidden="true"></i><span>';
 
