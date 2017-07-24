@@ -21,4 +21,21 @@
   <script type="text/javascript" src="js/script.js"></script>
   <!-- Start of HubSpot Embed Code -->
   <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/1981873.js"></script>
-<!-- End of HubSpot Embed Code -->
+  <!-- End of HubSpot Embed Code -->
+  {{#is basename "contact"}}
+  <script>
+    function initMap() {
+      var uluru = {lat: 43.450974, lng: -80.498925};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 17,
+        center: uluru
+      });
+      var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+      });
+    }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyW_yL0XWtrIG6Gk1F_R1Sujil9esQ0sI&callback=initMap">
+  </script>
+  {{/is}}
