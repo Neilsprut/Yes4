@@ -87,12 +87,16 @@ h4 {
   }
 }
 
-p {
-  color: $secondary-color-lightest;
+p, a {
   font-size: 16px;
   @media (min-width: $sm-up){
     font-size: 18px;
   }
+}
+
+p {
+  color: $secondary-color-lightest;
+
 }
 
 // Keep main paragraphs black color
@@ -186,9 +190,6 @@ section {
   background-position: center center;
 }
 
-/* ---------   Slogan  --------- */
-
-
 /* ----------  Main Page ---------- */
 
 /* ------   Intro Picture  ------- */
@@ -217,7 +218,6 @@ section {
     max-width: 340px;
     margin: 0 auto;
     @media (min-width: $sm-up) {
-      font-size: 50px;
       max-width: 550px;
     }
   }
@@ -351,10 +351,6 @@ section {
 .modal-dialog {
   max-width: 400px;
   margin: 10px auto;
-  // @media (min-width: $sm-up) {
-  //   width: 400px;
-  //   margin: 30px auto;
-  // }
 }
 
 /* ----------  About Us Page ---------- */
@@ -387,10 +383,32 @@ section {
   }
 }
 
-.contact-us {
+
+/* ----------  Contact Page ---------- */
+
+#map {
+  padding-bottom: 75%;
+  width: 100%;
+}
+
+.emails {
+  .col-md-3 {
+    display: block;
+    vertical-align: top;
+    @media (min-width: $md-up) {
+      display: inline-block;
+    }
+  }
+}
+
+#contact {
   p, form {
     max-width: 500px;
-    margin: 10px auto;
+    margin: 0px auto;
+    @media (min-width: $md-up) {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
   }
 }
 
