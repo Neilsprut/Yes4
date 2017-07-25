@@ -55,8 +55,8 @@ module.exports = function(grunt) {
       minify: {
         options: {},
         files: {
-          'js/script.min.js': ['src/js/*.js'],
-          'js/lib.min.js': ['vendor-js/jquery.js', 'vendor-js/*.js'],
+          'js/script.js': ['src/js/*.js'],
+          'js/lib.js': ['vendor-js/jquery.js', 'vendor-js/*.js'],
         }
       },
       pretty: {
