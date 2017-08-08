@@ -373,12 +373,15 @@ section {
       flex-wrap: wrap;
     }
   }
-  .picture:hover {
-    img {
-      opacity: 0.3;
-    }
-    a {
-      opacity: 1;
+  .picture {
+    border-radius: 50%;
+    &:hover {
+      img {
+        opacity: 0.3;
+      }
+      a {
+        opacity: 1;
+      }
     }
   }
 
@@ -477,6 +480,9 @@ footer {
       &:active, &:hover, &:focus {
         color: $hover;
       }
+    }
+    .fa-2x {
+      font-size: 1.5em;
     }
   }
 }
