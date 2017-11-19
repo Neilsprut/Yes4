@@ -1,0 +1,31 @@
+{
+  "name": "acerta.github.io",
+  "version": "1.0.0",
+  "description": "company website",
+  "main": "Gruntfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-assemble": "^0.5.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "live-server": "^1.2.0",
+    "load-grunt-tasks": "^3.5.2"
+  },
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Acerta/Acerta.github.io.git"
+  },
+  "author": "Himesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Acerta/Acerta.github.io/issues"
+  },
+  "homepage": "https://github.com/Acerta/Acerta.github.io#readme"
+}
